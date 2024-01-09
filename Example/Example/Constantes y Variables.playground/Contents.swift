@@ -4,6 +4,7 @@ import UIKit
 var str = "Hello, playground"
 str = "Hola Mundo"
 
-// Esto es una constante, y se escribe con let
-let stringConstant = "Hola mundo cruel"
-let myFullName = "Daniel"
+// Esto es una constante, y se escribe con let. Para escribir múltiples valores, simplemente las separamos con ,
+let stringConstant = "Hola mundo cruel", myFullName = "Daniel", myHome = "Málaga", waterToIce = 0
+
+waterToIce
