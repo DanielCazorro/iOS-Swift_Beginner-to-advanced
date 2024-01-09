@@ -37,6 +37,7 @@
 		2CDD7F442B4DEB420053920C /* Estructuras de Control.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Estructuras de Control.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2CDD7F452B4DEDCB0053920C /* If : Else.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "If : Else.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2CDD7F462B4DF0030053920C /* Switch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Switch.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2CDD7F472B4DF2040053920C /* For : In.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "For : In.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 				2CDD7F442B4DEB420053920C /* Estructuras de Control.playground */,
 				2CDD7F452B4DEDCB0053920C /* If : Else.playground */,
 				2CDD7F462B4DF0030053920C /* Switch.playground */,
+				2CDD7F472B4DF2040053920C /* For : In.playground */,
 			);
 			path = Example;
 			sourceTree = "<group>";
