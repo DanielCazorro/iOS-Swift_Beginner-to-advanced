@@ -27,6 +27,7 @@
 		2C6785E12B4D5735005236DA /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2C6785E22B4D5A80005236DA /* Constantes y Variables.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Constantes y Variables.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2C6785E32B4D5E9C005236DA /* Tipos de Datos.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Tipos de Datos.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2C6785E42B4D6449005236DA /* Caracteres - Strings (Cadenas de Texto) .playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Caracteres - Strings (Cadenas de Texto) .playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 				2C6785E12B4D5735005236DA /* MyPlayground.playground */,
 				2C6785E22B4D5A80005236DA /* Constantes y Variables.playground */,
 				2C6785E32B4D5E9C005236DA /* Tipos de Datos.playground */,
+				2C6785E42B4D6449005236DA /* Caracteres - Strings (Cadenas de Texto) .playground */,
 			);
 			path = Example;
 			sourceTree = "<group>";
