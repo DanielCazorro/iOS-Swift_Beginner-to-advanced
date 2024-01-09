@@ -29,6 +29,7 @@
 		2C6785E32B4D5E9C005236DA /* Tipos de Datos.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Tipos de Datos.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2C6785E42B4D6449005236DA /* Caracteres - Strings (Cadenas de Texto) .playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Caracteres - Strings (Cadenas de Texto) .playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2CDD7F3E2B4DCB910053920C /* Booleanos.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Booleanos.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2CDD7F3F2B4DD43F0053920C /* Colecciones.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Colecciones.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 				2C6785E32B4D5E9C005236DA /* Tipos de Datos.playground */,
 				2C6785E42B4D6449005236DA /* Caracteres - Strings (Cadenas de Texto) .playground */,
 				2CDD7F3E2B4DCB910053920C /* Booleanos.playground */,
+				2CDD7F3F2B4DD43F0053920C /* Colecciones.playground */,
 			);
 			path = Example;
 			sourceTree = "<group>";
