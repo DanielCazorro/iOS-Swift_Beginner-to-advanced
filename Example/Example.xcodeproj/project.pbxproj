@@ -31,6 +31,7 @@
 		2CDD7F3E2B4DCB910053920C /* Booleanos.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Booleanos.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2CDD7F3F2B4DD43F0053920C /* Colecciones.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Colecciones.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2CDD7F402B4DD6010053920C /* Diccionarios.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Diccionarios.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2CDD7F412B4DD7530053920C /* Tuplas.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Tuplas.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 				2CDD7F3E2B4DCB910053920C /* Booleanos.playground */,
 				2CDD7F3F2B4DD43F0053920C /* Colecciones.playground */,
 				2CDD7F402B4DD6010053920C /* Diccionarios.playground */,
+				2CDD7F412B4DD7530053920C /* Tuplas.playground */,
 			);
 			path = Example;
 			sourceTree = "<group>";
