@@ -3,5 +3,6 @@
     <pages>
         <page name='Tipo de dato String'/>
         <page name='Caracteres, unicodes y emojis'/>
+        <page name='Concatenación e Interpolación'/>
     </pages>
 </playground>
