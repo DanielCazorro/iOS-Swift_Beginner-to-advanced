@@ -17,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		2C0C7F262B4E846C00B833F3 /* Funciones sin parámetro.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Funciones sin parámetro.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2C0C7F272B4E89D800B833F3 /* Closures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closures.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2C6785CA2B4D571F005236DA /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6785CD2B4D571F005236DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6785CF2B4D571F005236DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 				2CDD7F482B4DF36C0053920C /* While.playground */,
 				2CDD7F492B4DF3E20053920C /* Repeat While.playground */,
 				2C0C7F262B4E846C00B833F3 /* Funciones sin parámetro.playground */,
+				2C0C7F272B4E89D800B833F3 /* Closures.playground */,
 			);
 			path = Example;
 			sourceTree = "<group>";
