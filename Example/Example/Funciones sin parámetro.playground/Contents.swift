@@ -38,10 +38,30 @@ func cuboDe(numero:Int) -> Int{
 _ = cuboDe(numero: 10)
 
 
-func saludarAlumno(nombre:String, mensaje:String){
+func saludarAlumno(nombre:String, mensaje:String = "te damos la bienvenida al curso de iOS con Swift"){
     
     print("Hola \(nombre) \(mensaje)")
     
 }
 
-saludarAlumno(nombre: "Maria", mensaje: "te damos la bienvenida al curso de iOS con Swift")
+// saludarAlumno(nombre: "Maria", mensaje: "y adios")
+
+func listaNombres () -> [String]{
+    
+    let arregloNombre = ["Jose", "Maria", "Pedro"]
+    return arregloNombre
+}
+
+// var nombres = listaNombres()
+
+// Nombre de Parametros Internos y Externos
+
+func califiacionPRomedio(matematicas materiaUno:Double, quimica materiaDos:Double, fisica materiaTres:Double) -> Double {
+    
+    return (materiaUno + materiaDos + materiaTres) / 3
+    
+}
+
+// let miCalificacionPromedioMaterias = califiacionPRomedio(matematicas: 81, quimica: 45, fisica: 60)
+
+// print(miCalificacionPromedioMaterias)
