@@ -4,5 +4,6 @@
         <page name='Opcionales'/>
         <page name='OptionalBinding'/>
         <page name='Optional Chaining'/>
+        <page name='GuardLet'/>
     </pages>
 </playground>

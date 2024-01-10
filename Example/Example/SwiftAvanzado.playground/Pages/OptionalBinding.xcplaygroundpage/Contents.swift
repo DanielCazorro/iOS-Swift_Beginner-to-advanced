@@ -16,8 +16,8 @@ myOptionalString3 = "Juan"
 
 if let myString = myOptionalString, let myString2 = myOptionalString2, let myString3 = myOptionalString3 {
     print("\(myString) \(myString2) \(myString3)")
-} else {
-    print("Alguna variable es nula")
+} else if let myString = myOptionalString {
+    print("myOptionalString posee un valor no nulo = \(myString)")
 }
 
 // Desempaquetado forzado
