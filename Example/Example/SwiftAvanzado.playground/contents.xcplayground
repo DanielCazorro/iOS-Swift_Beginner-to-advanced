@@ -6,5 +6,6 @@
         <page name='Optional Chaining'/>
         <page name='GuardLet'/>
         <page name='ErrorHandling'/>
+        <page name='TypeCasting'/>
     </pages>
 </playground>
