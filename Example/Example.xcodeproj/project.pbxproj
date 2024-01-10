@@ -20,6 +20,7 @@
 		2C0C7F272B4E89D800B833F3 /* Closures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closures.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2C0C7F282B4E91B500B833F3 /* POO.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = POO.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2C0C7F292B4E927A00B833F3 /* Clases.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Clases.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2C0C7F2A2B4E981C00B833F3 /* SwiftAvanzado.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftAvanzado.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2C6785CA2B4D571F005236DA /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6785CD2B4D571F005236DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6785CF2B4D571F005236DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +104,7 @@
 				2C0C7F272B4E89D800B833F3 /* Closures.playground */,
 				2C0C7F282B4E91B500B833F3 /* POO.playground */,
 				2C0C7F292B4E927A00B833F3 /* Clases.playground */,
+				2C0C7F2A2B4E981C00B833F3 /* SwiftAvanzado.playground */,
 			);
 			path = Example;
 			sourceTree = "<group>";
