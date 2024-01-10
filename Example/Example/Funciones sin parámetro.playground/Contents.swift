@@ -9,7 +9,7 @@ func holaMundo() {
     print("Hola mundo")
 }
 
-holaMundo()
+// holaMundo()
 
 func sumaDosNumerosCualquiera(){
 
@@ -17,4 +17,15 @@ func sumaDosNumerosCualquiera(){
     
 }
 
-sumaDosNumerosCualquiera()
+// sumaDosNumerosCualquiera()
+
+func cuadradoDe(numero:Int) {
+    
+    let numeroCuadrado = numero * numero
+    
+    print(numeroCuadrado)
+}
+
+// cuadradoDe(numero: 10)
+
+
