@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myPageControl: UIPageControl!
     @IBOutlet weak var mySegmentedControl: UISegmentedControl!
     @IBOutlet weak var mySlider: UISlider!
+    @IBOutlet weak var myStepper: UIStepper!
     
     // Variables
     
@@ -54,6 +55,11 @@ class ViewController: UIViewController {
         mySlider.minimumValue = 1
         mySlider.maximumValue = Float(myPickerViewValues.count)
         mySlider.value = 1
+        
+        // Stepper
+        
+        myStepper.minimumValue = 1
+        myStepper.maximumValue = Double(myPickerViewValues.count)
         
     }
     
@@ -102,28 +108,38 @@ class ViewController: UIViewController {
             mySegmentedControl.selectedSegmentIndex = 1
             myPageControl.currentPage = 1
             myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
-
-
+            
+            
         case 3..<4:
             mySegmentedControl.selectedSegmentIndex = 2
             myPageControl.currentPage = 2
             myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
-
-
+            
+            
         case 4..<5:
             mySegmentedControl.selectedSegmentIndex = 3
             myPageControl.currentPage = 3
             myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
-
-
+            
+            
         default:
             mySegmentedControl.selectedSegmentIndex = 4
             myPageControl.currentPage = 4
             myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
-
-
+            
+            
         }
     }
+    
+    @IBAction func myStepperAction(_ sender: Any) {
+        
+        let value = myStepper.value
+        mySlider.value = Float(value)
+        mySegmentedControl.selectedSegmentIndex = Int(value) - 1
+        myPageControl.currentPage = Int(value) - 1
+        myPickerView.selectRow(Int(value) - 1, inComponent: 0, animated: true)
+    }
+    
 }
 
 
