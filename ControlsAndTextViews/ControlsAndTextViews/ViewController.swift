@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var mySegmentedControl: UISegmentedControl!
     @IBOutlet weak var mySlider: UISlider!
     @IBOutlet weak var myStepper: UIStepper!
+    @IBOutlet weak var mySwitch: UISwitch!
     
     // Variables
     
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
         myPickerView.backgroundColor = .lightGray
         myPickerView.dataSource = self
         myPickerView.delegate = self
+        myPickerView.isHidden = true
         
         // PageControls
         
@@ -60,6 +62,11 @@ class ViewController: UIViewController {
         
         myStepper.minimumValue = 1
         myStepper.maximumValue = Double(myPickerViewValues.count)
+        
+        // Switch
+        
+        mySwitch.onTintColor = .purple
+        mySwitch.isOn = false
         
     }
     
@@ -140,6 +147,14 @@ class ViewController: UIViewController {
         myPickerView.selectRow(Int(value) - 1, inComponent: 0, animated: true)
     }
     
+    @IBAction func mySwitchAction(_ sender: Any) {
+        
+        if mySwitch.isOn {
+            myPickerView.isHidden = false
+        } else {
+            myPickerView.isHidden = true
+        }
+    }
 }
 
 
