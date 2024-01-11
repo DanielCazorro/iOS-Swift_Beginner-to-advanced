@@ -8,11 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     // MARK: - Outlets -
     @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var myPickerView: UIPickerView!
     @IBOutlet weak var myPageControl: UIPageControl!
+    @IBOutlet weak var mySegmentedControl: UISegmentedControl!
+    
     
     // Variables
     
@@ -20,7 +22,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Buttons
         
         myButton.setTitle("Mi Botón", for: .normal)
@@ -39,11 +41,17 @@ class ViewController: UIViewController {
         myPageControl.currentPageIndicatorTintColor = .blue
         myPageControl.pageIndicatorTintColor = .lightGray
         
+        // SegmentedControl
+        
+        mySegmentedControl.removeAllSegments()
+        for (index, value) in myPickerViewValues.enumerated() {
+            mySegmentedControl.insertSegment(withTitle: value, at: index, animated: true)
+        }
         
     }
-
+    
     // MARK: - Actions -
-
+    
     @IBAction func myButtonAction(_ sender: Any) {
         
         if myButton.backgroundColor == .blue {
@@ -58,7 +66,18 @@ class ViewController: UIViewController {
         
         let myString = myPickerViewValues[myPageControl.currentPage]
         myButton.setTitle(myString, for: .normal)
+        mySegmentedControl.selectedSegmentIndex = myPageControl.currentPage
     }
+    
+    @IBAction func mySegmentedControlAction(_ sender: Any) {
+        myPickerView.selectRow(mySegmentedControl.selectedSegmentIndex, inComponent: 0, animated: true)
+        
+        let myString = myPickerViewValues[mySegmentedControl.selectedSegmentIndex]
+        myButton.setTitle(myString, for: .normal)
+        
+        myPageControl.currentPage = mySegmentedControl.selectedSegmentIndex
+    }
+    
 }
 
 
@@ -83,6 +102,8 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
         myButton.setTitle(myString, for: .normal)
         
         myPageControl.currentPage = row
+        
+        mySegmentedControl.selectedSegmentIndex = row
     }
     
 }
