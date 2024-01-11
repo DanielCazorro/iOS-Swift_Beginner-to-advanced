@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBw-Wz-yhy">
-                                <rect key="frame" x="129.66666666666663" y="612" width="134" height="35"/>
+                                <rect key="frame" x="129.66666666666663" y="612.33333333333337" width="134" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Cambiar Texto"/>
                                 <connections>
@@ -34,10 +34,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vAs-KD-kOn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fnr-gx-RM0"/>
-                            <constraint firstItem="vAs-KD-kOn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WvV-Z5-JHo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hBw-Wz-yhy" secondAttribute="bottom" constant="171" id="e9b-q7-HXV"/>
-                            <constraint firstItem="hBw-Wz-yhy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hYq-e5-f2y"/>
+                            <constraint firstItem="hBw-Wz-yhy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0NM-z8-WII"/>
+                            <constraint firstItem="vAs-KD-kOn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ikm-hD-g0h"/>
+                            <constraint firstItem="vAs-KD-kOn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QgT-xZ-Eky"/>
+                            <constraint firstItem="hBw-Wz-yhy" firstAttribute="top" secondItem="vAs-KD-kOn" secondAttribute="bottom" constant="175.66666666666663" id="XfE-HM-Tkb"/>
                         </constraints>
                     </view>
                     <connections>
