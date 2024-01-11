@@ -4,5 +4,6 @@
         <page name='CollectionAlggorithms'/>
         <page name='Map'/>
         <page name='ForEach'/>
+        <page name='OtherOperations'/>
     </pages>
 </playground>
