@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myPickerView: UIPickerView!
     @IBOutlet weak var myPageControl: UIPageControl!
     @IBOutlet weak var mySegmentedControl: UISegmentedControl!
-    
+    @IBOutlet weak var mySlider: UISlider!
     
     // Variables
     
@@ -48,6 +48,13 @@ class ViewController: UIViewController {
             mySegmentedControl.insertSegment(withTitle: value, at: index, animated: true)
         }
         
+        // My Slider
+        
+        mySlider.minimumTrackTintColor = .red
+        mySlider.minimumValue = 1
+        mySlider.maximumValue = Float(myPickerViewValues.count)
+        mySlider.value = 1
+        
     }
     
     // MARK: - Actions -
@@ -67,6 +74,7 @@ class ViewController: UIViewController {
         let myString = myPickerViewValues[myPageControl.currentPage]
         myButton.setTitle(myString, for: .normal)
         mySegmentedControl.selectedSegmentIndex = myPageControl.currentPage
+        mySlider.value = Float(myPageControl.currentPage) + 1
     }
     
     @IBAction func mySegmentedControlAction(_ sender: Any) {
@@ -76,8 +84,46 @@ class ViewController: UIViewController {
         myButton.setTitle(myString, for: .normal)
         
         myPageControl.currentPage = mySegmentedControl.selectedSegmentIndex
+        
+        mySlider.value = Float(mySegmentedControl.selectedSegmentIndex) + 1
     }
     
+    @IBAction func mySliderAction(_ sender: Any) {
+        
+        print(mySlider.value)
+        
+        switch mySlider.value {
+        case 1..<2:
+            mySegmentedControl.selectedSegmentIndex = 0
+            myPageControl.currentPage = 0
+            myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
+            
+        case 2..<3:
+            mySegmentedControl.selectedSegmentIndex = 1
+            myPageControl.currentPage = 1
+            myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
+
+
+        case 3..<4:
+            mySegmentedControl.selectedSegmentIndex = 2
+            myPageControl.currentPage = 2
+            myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
+
+
+        case 4..<5:
+            mySegmentedControl.selectedSegmentIndex = 3
+            myPageControl.currentPage = 3
+            myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
+
+
+        default:
+            mySegmentedControl.selectedSegmentIndex = 4
+            myPageControl.currentPage = 4
+            myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
+
+
+        }
+    }
 }
 
 
@@ -104,6 +150,8 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
         myPageControl.currentPage = row
         
         mySegmentedControl.selectedSegmentIndex = row
+        
+        mySlider.value = Float(row) + 1
     }
     
 }

@@ -46,6 +46,12 @@
                                     <action selector="mySegmentedControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="4zb-Bk-te8"/>
                                 </connections>
                             </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PCI-fP-fWk">
+                                <rect key="frame" x="22" y="395" width="349" height="31"/>
+                                <connections>
+                                    <action selector="mySliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ffd-gA-0UE"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -55,11 +61,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BDI-K8-CwK" secondAttribute="trailing" constant="20" id="FO1-qd-gNt"/>
                             <constraint firstItem="Zwm-0x-O7p" firstAttribute="top" secondItem="uWX-7A-3Tu" secondAttribute="bottom" constant="20" id="RrV-0T-Fwv"/>
                             <constraint firstItem="TBU-HE-pME" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ShX-Zd-8VH"/>
+                            <constraint firstItem="PCI-fP-fWk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="bYc-Rn-HGZ"/>
                             <constraint firstItem="TBU-HE-pME" firstAttribute="top" secondItem="Zwm-0x-O7p" secondAttribute="bottom" constant="20" id="eOI-a8-BtR"/>
                             <constraint firstItem="Zwm-0x-O7p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eus-Eg-eIJ"/>
                             <constraint firstItem="BDI-K8-CwK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g8p-Jp-8a9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TBU-HE-pME" secondAttribute="trailing" constant="20" id="h9f-1p-jRl"/>
+                            <constraint firstItem="PCI-fP-fWk" firstAttribute="top" secondItem="TBU-HE-pME" secondAttribute="bottom" constant="24" id="kBR-j1-4U2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zwm-0x-O7p" secondAttribute="trailing" constant="20" id="mrw-om-ftS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PCI-fP-fWk" secondAttribute="trailing" constant="24" id="sjl-55-Y20"/>
                             <constraint firstItem="uWX-7A-3Tu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tAq-We-8yC"/>
                             <constraint firstItem="uWX-7A-3Tu" firstAttribute="top" secondItem="BDI-K8-CwK" secondAttribute="bottom" constant="20" id="wAt-zA-GRY"/>
                         </constraints>
@@ -69,6 +78,7 @@
                         <outlet property="myPageControl" destination="Zwm-0x-O7p" id="jxQ-B5-L0i"/>
                         <outlet property="myPickerView" destination="uWX-7A-3Tu" id="td2-w9-5Li"/>
                         <outlet property="mySegmentedControl" destination="TBU-HE-pME" id="FUl-4o-OFG"/>
+                        <outlet property="mySlider" destination="PCI-fP-fWk" id="747-UW-tpN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
