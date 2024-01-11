@@ -61,23 +61,34 @@
                                     <action selector="mySwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="A70-ng-YMi"/>
                                 </connections>
                             </switch>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FjQ-rH-NxA">
+                                <rect key="frame" x="24" y="560" width="345" height="4"/>
+                            </progressView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="kjA-OS-tx4">
+                                <rect key="frame" x="186.66666666666666" y="204" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Exs-DV-55I" firstAttribute="top" secondItem="PCI-fP-fWk" secondAttribute="bottom" constant="24" id="0pm-EP-JzK"/>
                             <constraint firstItem="BDI-K8-CwK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="2ya-n9-ymp"/>
+                            <constraint firstItem="kjA-OS-tx4" firstAttribute="centerY" secondItem="uWX-7A-3Tu" secondAttribute="centerY" id="4LB-0a-u2x"/>
                             <constraint firstItem="Yt2-PK-bRs" firstAttribute="top" secondItem="Exs-DV-55I" secondAttribute="bottom" constant="24" id="7pQ-Ol-Zen"/>
+                            <constraint firstItem="kjA-OS-tx4" firstAttribute="centerX" secondItem="uWX-7A-3Tu" secondAttribute="centerX" id="Ecp-yh-Fh7"/>
                             <constraint firstItem="uWX-7A-3Tu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="F7L-BW-7Lf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BDI-K8-CwK" secondAttribute="trailing" constant="20" id="FO1-qd-gNt"/>
                             <constraint firstItem="Zwm-0x-O7p" firstAttribute="top" secondItem="uWX-7A-3Tu" secondAttribute="bottom" constant="20" id="RrV-0T-Fwv"/>
                             <constraint firstItem="TBU-HE-pME" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ShX-Zd-8VH"/>
+                            <constraint firstItem="FjQ-rH-NxA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="ZTo-Ye-Uxj"/>
                             <constraint firstItem="PCI-fP-fWk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="bYc-Rn-HGZ"/>
+                            <constraint firstItem="FjQ-rH-NxA" firstAttribute="top" secondItem="Yt2-PK-bRs" secondAttribute="bottom" constant="24" id="dzV-aM-k5b"/>
                             <constraint firstItem="TBU-HE-pME" firstAttribute="top" secondItem="Zwm-0x-O7p" secondAttribute="bottom" constant="20" id="eOI-a8-BtR"/>
                             <constraint firstItem="Zwm-0x-O7p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eus-Eg-eIJ"/>
                             <constraint firstItem="BDI-K8-CwK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g8p-Jp-8a9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TBU-HE-pME" secondAttribute="trailing" constant="20" id="h9f-1p-jRl"/>
                             <constraint firstItem="PCI-fP-fWk" firstAttribute="top" secondItem="TBU-HE-pME" secondAttribute="bottom" constant="24" id="kBR-j1-4U2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FjQ-rH-NxA" secondAttribute="trailing" constant="24" id="kk9-Ue-oqp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zwm-0x-O7p" secondAttribute="trailing" constant="20" id="mrw-om-ftS"/>
                             <constraint firstItem="Yt2-PK-bRs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r4A-1L-mbc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PCI-fP-fWk" secondAttribute="trailing" constant="24" id="sjl-55-Y20"/>
@@ -87,9 +98,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="myActivityIndicator" destination="kjA-OS-tx4" id="z4D-7C-uSX"/>
                         <outlet property="myButton" destination="BDI-K8-CwK" id="ya2-7B-DDz"/>
                         <outlet property="myPageControl" destination="Zwm-0x-O7p" id="jxQ-B5-L0i"/>
                         <outlet property="myPickerView" destination="uWX-7A-3Tu" id="td2-w9-5Li"/>
+                        <outlet property="myProgressView" destination="FjQ-rH-NxA" id="hbH-AK-8rw"/>
                         <outlet property="mySegmentedControl" destination="TBU-HE-pME" id="FUl-4o-OFG"/>
                         <outlet property="mySlider" destination="PCI-fP-fWk" id="747-UW-tpN"/>
                         <outlet property="myStepper" destination="Exs-DV-55I" id="b5K-Dn-Jrk"/>

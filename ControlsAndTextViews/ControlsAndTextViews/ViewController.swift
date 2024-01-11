@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var mySlider: UISlider!
     @IBOutlet weak var myStepper: UIStepper!
     @IBOutlet weak var mySwitch: UISwitch!
+    @IBOutlet weak var myProgressView: UIProgressView!
+    @IBOutlet weak var myActivityIndicator: UIActivityIndicatorView!
     
     // Variables
     
@@ -68,6 +70,15 @@ class ViewController: UIViewController {
         mySwitch.onTintColor = .purple
         mySwitch.isOn = false
         
+        // Progress View
+        
+        myProgressView.progress = 0
+        
+        // Activity Indicator
+        
+        myActivityIndicator.color = .orange
+        myActivityIndicator.startAnimating()
+        myActivityIndicator.hidesWhenStopped = true
     }
     
     // MARK: - Actions -
@@ -103,24 +114,26 @@ class ViewController: UIViewController {
     
     @IBAction func mySliderAction(_ sender: Any) {
         
-        print(mySlider.value)
-        
+        var progress: Float = 0
         switch mySlider.value {
         case 1..<2:
             mySegmentedControl.selectedSegmentIndex = 0
             myPageControl.currentPage = 0
             myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
+            progress = 0.2
             
         case 2..<3:
             mySegmentedControl.selectedSegmentIndex = 1
             myPageControl.currentPage = 1
             myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
+            progress = 0.4
             
             
         case 3..<4:
             mySegmentedControl.selectedSegmentIndex = 2
             myPageControl.currentPage = 2
             myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
+            progress = 0.6
             
             
         case 4..<5:
@@ -128,14 +141,17 @@ class ViewController: UIViewController {
             myPageControl.currentPage = 3
             myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
             
+            progress = 0.8
             
         default:
             mySegmentedControl.selectedSegmentIndex = 4
             myPageControl.currentPage = 4
             myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
-            
+            progress = 1
             
         }
+        myProgressView.progress = progress
+        
     }
     
     @IBAction func myStepperAction(_ sender: Any) {
@@ -151,8 +167,12 @@ class ViewController: UIViewController {
         
         if mySwitch.isOn {
             myPickerView.isHidden = false
+            myActivityIndicator.stopAnimating()
+            //myActivityIndicator.isHidden = true
         } else {
             myPickerView.isHidden = true
+            myActivityIndicator.startAnimating()
+            //myActivityIndicator.isHidden = false
         }
     }
 }
