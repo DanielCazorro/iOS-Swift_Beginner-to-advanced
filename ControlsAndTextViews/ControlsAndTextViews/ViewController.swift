@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     // MARK: - Outlets -
     @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var myPickerView: UIPickerView!
+    @IBOutlet weak var myPageControl: UIPageControl!
     
     // Variables
     
@@ -31,6 +32,14 @@ class ViewController: UIViewController {
         myPickerView.backgroundColor = .lightGray
         myPickerView.dataSource = self
         myPickerView.delegate = self
+        
+        // PageControls
+        
+        myPageControl.numberOfPages = myPickerViewValues.count
+        myPageControl.currentPageIndicatorTintColor = .blue
+        myPageControl.pageIndicatorTintColor = .lightGray
+        
+        
     }
 
     // MARK: - Actions -
@@ -43,8 +52,19 @@ class ViewController: UIViewController {
             myButton.backgroundColor = .blue
         }
     }
+    
+    @IBAction func myPageControlAction(_ sender: Any) {
+        myPickerView.selectRow(myPageControl.currentPage, inComponent: 0, animated: true)
+        
+        let myString = myPickerViewValues[myPageControl.currentPage]
+        myButton.setTitle(myString, for: .normal)
+    }
 }
 
+
+
+
+// MARK: - Extensions -
 extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -61,6 +81,8 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let myString = myPickerViewValues[row]
         myButton.setTitle(myString, for: .normal)
+        
+        myPageControl.currentPage = row
     }
     
 }
