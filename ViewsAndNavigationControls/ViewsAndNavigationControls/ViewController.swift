@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var myView: UIView!
     @IBOutlet weak var myImage: UIImageView!
     @IBOutlet weak var myFakeView: UIView!
-    
     @IBOutlet weak var myMap: MKMapView!
     @IBOutlet weak var myWebView: WKWebView!
     
@@ -23,6 +22,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "My View Controller"
         
         myWebView.load(URLRequest(url: URL(string: "https://google.es")!))
     }

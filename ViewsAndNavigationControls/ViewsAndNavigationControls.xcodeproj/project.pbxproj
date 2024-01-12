@@ -13,6 +13,7 @@
 		2CFFF7452B51258A00185C2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFF7432B51258A00185C2C /* Main.storyboard */; };
 		2CFFF7472B51258B00185C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFF7462B51258B00185C2C /* Assets.xcassets */; };
 		2CFFF74A2B51258B00185C2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFF7482B51258B00185C2C /* LaunchScreen.storyboard */; };
+		2CFFF7522B5130D800185C2C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFFF7512B5130D800185C2C /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2CFFF7462B51258B00185C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CFFF7492B51258B00185C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CFFF74B2B51258B00185C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CFFF7512B5130D800185C2C /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				2CFFF7462B51258B00185C2C /* Assets.xcassets */,
 				2CFFF7482B51258B00185C2C /* LaunchScreen.storyboard */,
 				2CFFF74B2B51258B00185C2C /* Info.plist */,
+				2CFFF7512B5130D800185C2C /* PageViewController.swift */,
 			);
 			path = ViewsAndNavigationControls;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				2CFFF7422B51258A00185C2C /* ViewController.swift in Sources */,
 				2CFFF73E2B51258A00185C2C /* AppDelegate.swift in Sources */,
 				2CFFF7402B51258A00185C2C /* SceneDelegate.swift in Sources */,
+				2CFFF7522B5130D800185C2C /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
