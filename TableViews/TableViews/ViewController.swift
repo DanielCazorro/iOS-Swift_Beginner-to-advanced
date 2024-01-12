@@ -19,8 +19,6 @@ class ViewController: UIViewController {
         // tableView.backgroundColor = .red
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.tableFooterView = UIView()
-        
         tableView.register(UINib(nibName: "MyCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "mycustomcell")
         
     }
@@ -29,6 +27,21 @@ class ViewController: UIViewController {
 
 // MARK: - UITableViewDataSource
 extension ViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "Celdas Simples"
+        }
+        return "Celdas Custom"
+    }
+    
+    
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        if section == 0 {
+            return "footer para celdas simples"
+        }
+        return "Footer para celdas complejas"
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myCountries.count
@@ -79,7 +92,7 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        
         
         print(myCountries[indexPath.row])
     }
