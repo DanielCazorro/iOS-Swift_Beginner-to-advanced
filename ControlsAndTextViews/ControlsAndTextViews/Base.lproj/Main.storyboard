@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDI-K8-CwK">
-                                <rect key="frame" x="20" y="99" width="353" height="35"/>
+                                <rect key="frame" x="20" y="259" width="353" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -25,19 +25,19 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWX-7A-3Tu">
-                                <rect key="frame" x="0.0" y="154" width="393" height="120"/>
+                                <rect key="frame" x="0.0" y="314" width="393" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="Wvt-9U-vYT"/>
                                 </constraints>
                             </pickerView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Zwm-0x-O7p">
-                                <rect key="frame" x="20" y="294" width="353" height="26"/>
+                                <rect key="frame" x="20" y="454" width="353" height="26"/>
                                 <connections>
                                     <action selector="myPageControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="QYO-m2-AaL"/>
                                 </connections>
                             </pageControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TBU-HE-pME">
-                                <rect key="frame" x="20" y="340" width="353" height="32"/>
+                                <rect key="frame" x="20" y="500" width="353" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -47,37 +47,70 @@
                                 </connections>
                             </segmentedControl>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PCI-fP-fWk">
-                                <rect key="frame" x="22" y="395" width="349" height="31"/>
+                                <rect key="frame" x="22" y="555" width="349" height="31"/>
                                 <connections>
                                     <action selector="mySliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ffd-gA-0UE"/>
                                 </connections>
                             </slider>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Exs-DV-55I">
-                                <rect key="frame" x="149.66666666666666" y="449" width="94" height="32"/>
+                                <rect key="frame" x="149.66666666666666" y="609" width="94" height="32"/>
                             </stepper>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yt2-PK-bRs">
-                                <rect key="frame" x="172" y="505" width="51" height="31"/>
+                                <rect key="frame" x="172" y="665" width="51" height="31"/>
                                 <connections>
                                     <action selector="mySwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="A70-ng-YMi"/>
                                 </connections>
                             </switch>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FjQ-rH-NxA">
-                                <rect key="frame" x="24" y="560" width="345" height="4"/>
+                                <rect key="frame" x="24" y="720" width="345" height="4"/>
                             </progressView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="kjA-OS-tx4">
-                                <rect key="frame" x="186.66666666666666" y="204" width="20" height="20"/>
+                                <rect key="frame" x="186.66666666666666" y="364" width="20" height="20"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGH-iE-aui">
+                                <rect key="frame" x="237" y="670" width="140" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUr-iH-N9q">
+                                <rect key="frame" x="259.66666666666669" y="614.66666666666663" width="117.33333333333331" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kAJ-IT-1ix">
+                                <rect key="frame" x="16" y="99" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v4q-QB-Yhn">
+                                <rect key="frame" x="16" y="149" width="361" height="149"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Exs-DV-55I" firstAttribute="top" secondItem="PCI-fP-fWk" secondAttribute="bottom" constant="24" id="0pm-EP-JzK"/>
-                            <constraint firstItem="BDI-K8-CwK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="2ya-n9-ymp"/>
+                            <constraint firstItem="pUr-iH-N9q" firstAttribute="leading" secondItem="Exs-DV-55I" secondAttribute="trailing" constant="16" id="1HS-X7-q5I"/>
+                            <constraint firstItem="BDI-K8-CwK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="2ya-n9-ymp"/>
                             <constraint firstItem="kjA-OS-tx4" firstAttribute="centerY" secondItem="uWX-7A-3Tu" secondAttribute="centerY" id="4LB-0a-u2x"/>
                             <constraint firstItem="Yt2-PK-bRs" firstAttribute="top" secondItem="Exs-DV-55I" secondAttribute="bottom" constant="24" id="7pQ-Ol-Zen"/>
+                            <constraint firstItem="ZGH-iE-aui" firstAttribute="leading" secondItem="Yt2-PK-bRs" secondAttribute="trailing" constant="16" id="AEG-FO-8df"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v4q-QB-Yhn" secondAttribute="trailing" constant="16" id="DGr-ZK-QCg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZGH-iE-aui" secondAttribute="trailing" constant="16" id="DLa-50-hGV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kAJ-IT-1ix" secondAttribute="trailing" constant="16" id="E9h-dF-zEb"/>
+                            <constraint firstItem="pUr-iH-N9q" firstAttribute="centerY" secondItem="Exs-DV-55I" secondAttribute="centerY" id="ESc-bp-qi0"/>
                             <constraint firstItem="kjA-OS-tx4" firstAttribute="centerX" secondItem="uWX-7A-3Tu" secondAttribute="centerX" id="Ecp-yh-Fh7"/>
                             <constraint firstItem="uWX-7A-3Tu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="F7L-BW-7Lf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BDI-K8-CwK" secondAttribute="trailing" constant="20" id="FO1-qd-gNt"/>
+                            <constraint firstItem="ZGH-iE-aui" firstAttribute="centerY" secondItem="Yt2-PK-bRs" secondAttribute="centerY" id="HgM-ZA-R8l"/>
+                            <constraint firstItem="kAJ-IT-1ix" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="KbT-2T-cNX"/>
                             <constraint firstItem="Zwm-0x-O7p" firstAttribute="top" secondItem="uWX-7A-3Tu" secondAttribute="bottom" constant="20" id="RrV-0T-Fwv"/>
                             <constraint firstItem="TBU-HE-pME" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ShX-Zd-8VH"/>
                             <constraint firstItem="FjQ-rH-NxA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="ZTo-Ye-Uxj"/>
@@ -85,14 +118,19 @@
                             <constraint firstItem="FjQ-rH-NxA" firstAttribute="top" secondItem="Yt2-PK-bRs" secondAttribute="bottom" constant="24" id="dzV-aM-k5b"/>
                             <constraint firstItem="TBU-HE-pME" firstAttribute="top" secondItem="Zwm-0x-O7p" secondAttribute="bottom" constant="20" id="eOI-a8-BtR"/>
                             <constraint firstItem="Zwm-0x-O7p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eus-Eg-eIJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pUr-iH-N9q" secondAttribute="trailing" constant="16" id="fVh-4K-cVN"/>
                             <constraint firstItem="BDI-K8-CwK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g8p-Jp-8a9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TBU-HE-pME" secondAttribute="trailing" constant="20" id="h9f-1p-jRl"/>
                             <constraint firstItem="PCI-fP-fWk" firstAttribute="top" secondItem="TBU-HE-pME" secondAttribute="bottom" constant="24" id="kBR-j1-4U2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FjQ-rH-NxA" secondAttribute="trailing" constant="24" id="kk9-Ue-oqp"/>
+                            <constraint firstItem="uWX-7A-3Tu" firstAttribute="top" secondItem="v4q-QB-Yhn" secondAttribute="bottom" constant="16" id="l4U-6q-4ch"/>
+                            <constraint firstItem="v4q-QB-Yhn" firstAttribute="top" secondItem="kAJ-IT-1ix" secondAttribute="bottom" constant="16" id="ltR-CL-J4S"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zwm-0x-O7p" secondAttribute="trailing" constant="20" id="mrw-om-ftS"/>
+                            <constraint firstItem="v4q-QB-Yhn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pyM-eI-mR8"/>
                             <constraint firstItem="Yt2-PK-bRs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r4A-1L-mbc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PCI-fP-fWk" secondAttribute="trailing" constant="24" id="sjl-55-Y20"/>
                             <constraint firstItem="uWX-7A-3Tu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tAq-We-8yC"/>
+                            <constraint firstItem="kAJ-IT-1ix" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tzX-dz-5sM"/>
                             <constraint firstItem="uWX-7A-3Tu" firstAttribute="top" secondItem="BDI-K8-CwK" secondAttribute="bottom" constant="20" id="wAt-zA-GRY"/>
                             <constraint firstItem="Exs-DV-55I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yrV-lk-r5c"/>
                         </constraints>
@@ -106,7 +144,11 @@
                         <outlet property="mySegmentedControl" destination="TBU-HE-pME" id="FUl-4o-OFG"/>
                         <outlet property="mySlider" destination="PCI-fP-fWk" id="747-UW-tpN"/>
                         <outlet property="myStepper" destination="Exs-DV-55I" id="b5K-Dn-Jrk"/>
+                        <outlet property="myStepperLabel" destination="pUr-iH-N9q" id="ERD-KY-Yq9"/>
                         <outlet property="mySwitch" destination="Yt2-PK-bRs" id="Fgi-Q6-9Hb"/>
+                        <outlet property="mySwitchLabel" destination="ZGH-iE-aui" id="N5s-NC-E9q"/>
+                        <outlet property="myTextField" destination="kAJ-IT-1ix" id="4xs-c3-u50"/>
+                        <outlet property="myTextView" destination="v4q-QB-Yhn" id="JaX-rQ-xko"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -115,6 +157,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

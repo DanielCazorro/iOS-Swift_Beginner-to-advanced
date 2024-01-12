@@ -19,6 +19,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var mySwitch: UISwitch!
     @IBOutlet weak var myProgressView: UIProgressView!
     @IBOutlet weak var myActivityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var myStepperLabel: UILabel!
+    @IBOutlet weak var mySwitchLabel: UILabel!
+    @IBOutlet weak var myTextField: UITextField!
+    @IBOutlet weak var myTextView: UITextView!
     
     // Variables
     
@@ -79,6 +83,26 @@ class ViewController: UIViewController {
         myActivityIndicator.color = .orange
         myActivityIndicator.startAnimating()
         myActivityIndicator.hidesWhenStopped = true
+        
+        // Labels
+        
+        myStepperLabel.textColor = .darkGray
+        myStepperLabel.font = UIFont.boldSystemFont(ofSize: 36)
+        myStepperLabel.text = "1"
+        
+        mySwitchLabel.text = "Está apagado"
+        
+        // TextFields
+        
+        myTextField.textColor = .brown
+        myTextField.placeholder = "Escribe algo"
+        myTextField.delegate = self
+        
+        // TextView
+        myTextView.textColor = .brown
+        myTextView.delegate = self
+        
+        
     }
     
     // MARK: - Actions -
@@ -90,6 +114,8 @@ class ViewController: UIViewController {
         } else {
             myButton.backgroundColor = .blue
         }
+        
+        myTextView.resignFirstResponder()
     }
     
     @IBAction func myPageControlAction(_ sender: Any) {
@@ -98,7 +124,7 @@ class ViewController: UIViewController {
         let myString = myPickerViewValues[myPageControl.currentPage]
         myButton.setTitle(myString, for: .normal)
         mySegmentedControl.selectedSegmentIndex = myPageControl.currentPage
-        mySlider.value = Float(myPageControl.currentPage) + 1
+        mySlider.value = Float(myPageControl.currentPage)
     }
     
     @IBAction func mySegmentedControlAction(_ sender: Any) {
@@ -109,44 +135,45 @@ class ViewController: UIViewController {
         
         myPageControl.currentPage = mySegmentedControl.selectedSegmentIndex
         
-        mySlider.value = Float(mySegmentedControl.selectedSegmentIndex) + 1
+        mySlider.value = Float(mySegmentedControl.selectedSegmentIndex)
     }
     
     @IBAction func mySliderAction(_ sender: Any) {
         
         var progress: Float = 0
+        
         switch mySlider.value {
         case 1..<2:
             mySegmentedControl.selectedSegmentIndex = 0
             myPageControl.currentPage = 0
-            myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
+            myPickerView.selectRow(Int(mySlider.value) , inComponent: 0, animated: true)
             progress = 0.2
             
         case 2..<3:
             mySegmentedControl.selectedSegmentIndex = 1
             myPageControl.currentPage = 1
-            myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
+            myPickerView.selectRow(Int(mySlider.value), inComponent: 0, animated: true)
             progress = 0.4
             
             
         case 3..<4:
             mySegmentedControl.selectedSegmentIndex = 2
             myPageControl.currentPage = 2
-            myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
+            myPickerView.selectRow(Int(mySlider.value), inComponent: 0, animated: true)
             progress = 0.6
             
             
         case 4..<5:
             mySegmentedControl.selectedSegmentIndex = 3
             myPageControl.currentPage = 3
-            myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
+            myPickerView.selectRow(Int(mySlider.value), inComponent: 0, animated: true)
             
             progress = 0.8
             
         default:
             mySegmentedControl.selectedSegmentIndex = 4
             myPageControl.currentPage = 4
-            myPickerView.selectRow(Int(mySlider.value) - 1, inComponent: 0, animated: true)
+            myPickerView.selectRow(Int(mySlider.value), inComponent: 0, animated: true)
             progress = 1
             
         }
@@ -158,9 +185,11 @@ class ViewController: UIViewController {
         
         let value = myStepper.value
         mySlider.value = Float(value)
-        mySegmentedControl.selectedSegmentIndex = Int(value) - 1
-        myPageControl.currentPage = Int(value) - 1
-        myPickerView.selectRow(Int(value) - 1, inComponent: 0, animated: true)
+        mySegmentedControl.selectedSegmentIndex = Int(value)
+        myPageControl.currentPage = Int(value)
+        myPickerView.selectRow(Int(value), inComponent: 0, animated: true)
+        
+        myStepperLabel.text = "\(value)"
     }
     
     @IBAction func mySwitchAction(_ sender: Any) {
@@ -169,10 +198,13 @@ class ViewController: UIViewController {
             myPickerView.isHidden = false
             myActivityIndicator.stopAnimating()
             //myActivityIndicator.isHidden = true
+            
+            mySwitchLabel.text = "Está encendido"
         } else {
             myPickerView.isHidden = true
             myActivityIndicator.startAnimating()
             //myActivityIndicator.isHidden = false
+            mySwitchLabel.text = "Está apagado"
         }
     }
 }
@@ -202,7 +234,30 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
         
         mySegmentedControl.selectedSegmentIndex = row
         
-        mySlider.value = Float(row) + 1
+        mySlider.value = Float(row)
     }
     
 }
+
+// UITextFieldDelegate
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        myButton.setTitle(myTextField.text, for: .normal)
+    }
+}
+
+// UITextViewDelegate
+extension ViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        myTextView.isHidden = true
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        myTextView.isHidden = false
+    }
+}
+
