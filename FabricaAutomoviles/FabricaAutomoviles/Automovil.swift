@@ -1,13 +1,13 @@
 //
 //  Automovil.swift
-//  FabricaAutomóviles
+//  FabricaAutomoviles
 //
 //  Created by Daniel Cazorro Frias  on 12/1/24.
 //
 
 import Foundation
 
-class Automovil {
+class Automovil{
     
     var color = "neutro"
     var numeroLlantas = 4
@@ -20,4 +20,5 @@ class Automovil {
     func apagar() -> Bool {
         return false
     }
+    
 }

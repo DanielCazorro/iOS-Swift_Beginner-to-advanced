@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C42E11B2B519488006B1040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42E11A2B519488006B1040 /* AppDelegate.swift */; };
-		2C42E11D2B519488006B1040 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42E11C2B519488006B1040 /* SceneDelegate.swift */; };
-		2C42E11F2B519488006B1040 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42E11E2B519488006B1040 /* ViewController.swift */; };
-		2C42E1222B519488006B1040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C42E1202B519488006B1040 /* Main.storyboard */; };
-		2C42E1242B519489006B1040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C42E1232B519489006B1040 /* Assets.xcassets */; };
-		2C42E1272B519489006B1040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C42E1252B519489006B1040 /* LaunchScreen.storyboard */; };
-		2C42E12F2B5194BA006B1040 /* Automovil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42E12E2B5194BA006B1040 /* Automovil.swift */; };
+		2C42E1412B51A283006B1040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42E1402B51A283006B1040 /* AppDelegate.swift */; };
+		2C42E1432B51A283006B1040 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42E1422B51A283006B1040 /* SceneDelegate.swift */; };
+		2C42E1452B51A283006B1040 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42E1442B51A283006B1040 /* ViewController.swift */; };
+		2C42E1482B51A283006B1040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C42E1462B51A283006B1040 /* Main.storyboard */; };
+		2C42E14A2B51A284006B1040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C42E1492B51A284006B1040 /* Assets.xcassets */; };
+		2C42E14D2B51A284006B1040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C42E14B2B51A284006B1040 /* LaunchScreen.storyboard */; };
+		2C42E1552B51A2AE006B1040 /* ViewControllerSegundaPantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42E1542B51A2AE006B1040 /* ViewControllerSegundaPantalla.swift */; };
+		2C42E1572B51A2C7006B1040 /* Automovil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42E1562B51A2C7006B1040 /* Automovil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C42E1172B519488006B1040 /* FabricaAutomóviles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FabricaAutomóviles.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C42E11A2B519488006B1040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C42E11C2B519488006B1040 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C42E11E2B519488006B1040 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2C42E1212B519488006B1040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2C42E1232B519489006B1040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2C42E1262B519489006B1040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2C42E1282B519489006B1040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C42E12E2B5194BA006B1040 /* Automovil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automovil.swift; sourceTree = "<group>"; };
+		2C42E13D2B51A283006B1040 /* FabricaAutomoviles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FabricaAutomoviles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C42E1402B51A283006B1040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C42E1422B51A283006B1040 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2C42E1442B51A283006B1040 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C42E1472B51A283006B1040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C42E1492B51A284006B1040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C42E14C2B51A284006B1040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C42E14E2B51A284006B1040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C42E1542B51A2AE006B1040 /* ViewControllerSegundaPantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSegundaPantalla.swift; sourceTree = "<group>"; };
+		2C42E1562B51A2C7006B1040 /* Automovil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automovil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2C42E1142B519488006B1040 /* Frameworks */ = {
+		2C42E13A2B51A283006B1040 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +41,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C42E10E2B519488006B1040 = {
+		2C42E1342B51A283006B1040 = {
 			isa = PBXGroup;
 			children = (
-				2C42E1192B519488006B1040 /* FabricaAutomóviles */,
-				2C42E1182B519488006B1040 /* Products */,
+				2C42E13F2B51A283006B1040 /* FabricaAutomoviles */,
+				2C42E13E2B51A283006B1040 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2C42E1182B519488006B1040 /* Products */ = {
+		2C42E13E2B51A283006B1040 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C42E1172B519488006B1040 /* FabricaAutomóviles.app */,
+				2C42E13D2B51A283006B1040 /* FabricaAutomoviles.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2C42E1192B519488006B1040 /* FabricaAutomóviles */ = {
+		2C42E13F2B51A283006B1040 /* FabricaAutomoviles */ = {
 			isa = PBXGroup;
 			children = (
-				2C42E11A2B519488006B1040 /* AppDelegate.swift */,
-				2C42E11C2B519488006B1040 /* SceneDelegate.swift */,
-				2C42E11E2B519488006B1040 /* ViewController.swift */,
-				2C42E12E2B5194BA006B1040 /* Automovil.swift */,
-				2C42E1202B519488006B1040 /* Main.storyboard */,
-				2C42E1232B519489006B1040 /* Assets.xcassets */,
-				2C42E1252B519489006B1040 /* LaunchScreen.storyboard */,
-				2C42E1282B519489006B1040 /* Info.plist */,
+				2C42E1402B51A283006B1040 /* AppDelegate.swift */,
+				2C42E1422B51A283006B1040 /* SceneDelegate.swift */,
+				2C42E1442B51A283006B1040 /* ViewController.swift */,
+				2C42E1542B51A2AE006B1040 /* ViewControllerSegundaPantalla.swift */,
+				2C42E1562B51A2C7006B1040 /* Automovil.swift */,
+				2C42E1462B51A283006B1040 /* Main.storyboard */,
+				2C42E1492B51A284006B1040 /* Assets.xcassets */,
+				2C42E14B2B51A284006B1040 /* LaunchScreen.storyboard */,
+				2C42E14E2B51A284006B1040 /* Info.plist */,
 			);
-			path = "FabricaAutomóviles";
+			path = FabricaAutomoviles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C42E1162B519488006B1040 /* FabricaAutomóviles */ = {
+		2C42E13C2B51A283006B1040 /* FabricaAutomoviles */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C42E12B2B519489006B1040 /* Build configuration list for PBXNativeTarget "FabricaAutomóviles" */;
+			buildConfigurationList = 2C42E1512B51A284006B1040 /* Build configuration list for PBXNativeTarget "FabricaAutomoviles" */;
 			buildPhases = (
-				2C42E1132B519488006B1040 /* Sources */,
-				2C42E1142B519488006B1040 /* Frameworks */,
-				2C42E1152B519488006B1040 /* Resources */,
+				2C42E1392B51A283006B1040 /* Sources */,
+				2C42E13A2B51A283006B1040 /* Frameworks */,
+				2C42E13B2B51A283006B1040 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "FabricaAutomóviles";
-			productName = "FabricaAutomóviles";
-			productReference = 2C42E1172B519488006B1040 /* FabricaAutomóviles.app */;
+			name = FabricaAutomoviles;
+			productName = FabricaAutomoviles;
+			productReference = 2C42E13D2B51A283006B1040 /* FabricaAutomoviles.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2C42E10F2B519488006B1040 /* Project object */ = {
+		2C42E1352B51A283006B1040 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					2C42E1162B519488006B1040 = {
+					2C42E13C2B51A283006B1040 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
-			buildConfigurationList = 2C42E1122B519488006B1040 /* Build configuration list for PBXProject "FabricaAutomóviles" */;
+			buildConfigurationList = 2C42E1382B51A283006B1040 /* Build configuration list for PBXProject "FabricaAutomoviles" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +116,57 @@
 				en,
 				Base,
 			);
-			mainGroup = 2C42E10E2B519488006B1040;
-			productRefGroup = 2C42E1182B519488006B1040 /* Products */;
+			mainGroup = 2C42E1342B51A283006B1040;
+			productRefGroup = 2C42E13E2B51A283006B1040 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C42E1162B519488006B1040 /* FabricaAutomóviles */,
+				2C42E13C2B51A283006B1040 /* FabricaAutomoviles */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2C42E1152B519488006B1040 /* Resources */ = {
+		2C42E13B2B51A283006B1040 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C42E1272B519489006B1040 /* LaunchScreen.storyboard in Resources */,
-				2C42E1242B519489006B1040 /* Assets.xcassets in Resources */,
-				2C42E1222B519488006B1040 /* Main.storyboard in Resources */,
+				2C42E14D2B51A284006B1040 /* LaunchScreen.storyboard in Resources */,
+				2C42E14A2B51A284006B1040 /* Assets.xcassets in Resources */,
+				2C42E1482B51A283006B1040 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2C42E1132B519488006B1040 /* Sources */ = {
+		2C42E1392B51A283006B1040 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C42E11F2B519488006B1040 /* ViewController.swift in Sources */,
-				2C42E11B2B519488006B1040 /* AppDelegate.swift in Sources */,
-				2C42E12F2B5194BA006B1040 /* Automovil.swift in Sources */,
-				2C42E11D2B519488006B1040 /* SceneDelegate.swift in Sources */,
+				2C42E1452B51A283006B1040 /* ViewController.swift in Sources */,
+				2C42E1572B51A2C7006B1040 /* Automovil.swift in Sources */,
+				2C42E1552B51A2AE006B1040 /* ViewControllerSegundaPantalla.swift in Sources */,
+				2C42E1412B51A283006B1040 /* AppDelegate.swift in Sources */,
+				2C42E1432B51A283006B1040 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2C42E1202B519488006B1040 /* Main.storyboard */ = {
+		2C42E1462B51A283006B1040 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2C42E1212B519488006B1040 /* Base */,
+				2C42E1472B51A283006B1040 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2C42E1252B519489006B1040 /* LaunchScreen.storyboard */ = {
+		2C42E14B2B51A284006B1040 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2C42E1262B519489006B1040 /* Base */,
+				2C42E14C2B51A284006B1040 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +174,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2C42E1292B519489006B1040 /* Debug */ = {
+		2C42E14F2B51A284006B1040 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -233,7 +237,7 @@
 			};
 			name = Debug;
 		};
-		2C42E12A2B519489006B1040 /* Release */ = {
+		2C42E1502B51A284006B1040 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -289,7 +293,7 @@
 			};
 			name = Release;
 		};
-		2C42E12C2B519489006B1040 /* Debug */ = {
+		2C42E1522B51A284006B1040 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -297,7 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "FabricaAutomóviles/Info.plist";
+				INFOPLIST_FILE = FabricaAutomoviles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -308,7 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.DanielCazorro.FabricaAutomo-viles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DanielCazorro.FabricaAutomoviles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -316,7 +320,7 @@
 			};
 			name = Debug;
 		};
-		2C42E12D2B519489006B1040 /* Release */ = {
+		2C42E1532B51A284006B1040 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -324,7 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "FabricaAutomóviles/Info.plist";
+				INFOPLIST_FILE = FabricaAutomoviles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,7 +339,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.DanielCazorro.FabricaAutomo-viles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DanielCazorro.FabricaAutomoviles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -346,25 +350,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C42E1122B519488006B1040 /* Build configuration list for PBXProject "FabricaAutomóviles" */ = {
+		2C42E1382B51A283006B1040 /* Build configuration list for PBXProject "FabricaAutomoviles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C42E1292B519489006B1040 /* Debug */,
-				2C42E12A2B519489006B1040 /* Release */,
+				2C42E14F2B51A284006B1040 /* Debug */,
+				2C42E1502B51A284006B1040 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C42E12B2B519489006B1040 /* Build configuration list for PBXNativeTarget "FabricaAutomóviles" */ = {
+		2C42E1512B51A284006B1040 /* Build configuration list for PBXNativeTarget "FabricaAutomoviles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C42E12C2B519489006B1040 /* Debug */,
-				2C42E12D2B519489006B1040 /* Release */,
+				2C42E1522B51A284006B1040 /* Debug */,
+				2C42E1532B51A284006B1040 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2C42E10F2B519488006B1040 /* Project object */;
+	rootObject = 2C42E1352B51A283006B1040 /* Project object */;
 }

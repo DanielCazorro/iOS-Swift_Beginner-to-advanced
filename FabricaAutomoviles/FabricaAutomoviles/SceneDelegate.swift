@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  FabricaAutomóviles
+//  FabricaAutomoviles
 //
 //  Created by Daniel Cazorro Frias  on 12/1/24.
 //
