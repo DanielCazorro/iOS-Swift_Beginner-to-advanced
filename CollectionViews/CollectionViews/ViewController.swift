@@ -63,7 +63,7 @@ extension ViewController: UICollectionViewDelegate {
 
 // MARK: - UICollectionViewDelegateFlowLayout
 extension ViewController: UICollectionViewDelegateFlowLayout {
- 
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         return CGSize(width: myCellWidth, height: myCellWidth)
