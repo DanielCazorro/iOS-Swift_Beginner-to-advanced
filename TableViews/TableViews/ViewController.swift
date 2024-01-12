@@ -1,0 +1,44 @@
+//
+//  ViewController.swift
+//  TableViews
+//
+//  Created by Daniel Cazorro Frias  on 12/1/24.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    private let myCountries = ["España", "México", "Perú", "Colombia", "Argentina", "EEUU", "Francia", "Italia"]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // tableView.backgroundColor = .red
+        tableView.dataSource = self
+        tableView.tableFooterView = UIView()
+        
+    }
+    
+}
+
+// MARK: - UITableViewDataSource
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        myCountries.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "mycell")
+        if cell == nil{
+            cell = UITableViewCell(style: .default, reuseIdentifier: "mycell")
+            cell?.backgroundColor = .gray
+            cell?.textLabel?.font = UIFont.systemFont(ofSize: 20)
+        }
+        cell!.textLabel?.text = myCountries[indexPath.row]
+        return cell!
+    }
+    
+}
