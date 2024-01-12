@@ -161,15 +161,41 @@
         <!--Item-->
         <scene sceneID="r63-9g-GE7">
             <objects>
-                <viewController storyboardIdentifier="vcBlue" id="HT4-FN-aoM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vcBlue" id="HT4-FN-aoM" customClass="GreenViewController" customModule="ViewsAndNavigationControls" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cin-6T-9px">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Buscar" translatesAutoresizingMaskIntoConstraints="NO" id="vKs-hs-zkf">
+                                <rect key="frame" x="0.0" y="59" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="HT4-FN-aoM" id="ZPF-zF-Q0M"/>
+                                </connections>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buscando..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hj5-hd-0XO">
+                                <rect key="frame" x="151.66666666666666" y="415.66666666666669" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6B0-0h-1DX"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <constraints>
+                            <constraint firstItem="Hj5-hd-0XO" firstAttribute="centerX" secondItem="Cin-6T-9px" secondAttribute="centerX" id="O7w-Cy-tHk"/>
+                            <constraint firstItem="vKs-hs-zkf" firstAttribute="leading" secondItem="6B0-0h-1DX" secondAttribute="leading" id="bX5-cy-xhE"/>
+                            <constraint firstItem="Hj5-hd-0XO" firstAttribute="centerY" secondItem="Cin-6T-9px" secondAttribute="centerY" id="hi3-zq-jeK"/>
+                            <constraint firstItem="vKs-hs-zkf" firstAttribute="top" secondItem="6B0-0h-1DX" secondAttribute="top" id="yrT-Of-kq7"/>
+                            <constraint firstItem="vKs-hs-zkf" firstAttribute="trailing" secondItem="6B0-0h-1DX" secondAttribute="trailing" id="zF9-wC-p7b"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Utf-vv-nDO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myLabel" destination="Hj5-hd-0XO" id="GoS-88-bBJ"/>
+                        <outlet property="mySearchBar" destination="vKs-hs-zkf" id="Uf5-Fo-OxZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sM0-ud-Zbi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
