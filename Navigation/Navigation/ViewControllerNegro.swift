@@ -8,11 +8,17 @@
 import UIKit
 
 class ViewControllerNegro: UIViewController {
-
+    
+    var titulo: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if let tituloFinal = titulo{
+            self.title = tituloFinal
+        }
+        
     }
     
-
+    
 }
