@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         
         // tableView.backgroundColor = .red
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.tableFooterView = UIView()
         
     }
@@ -26,9 +27,12 @@ class ViewController: UIViewController {
 
 // MARK: - UITableViewDataSource
 extension ViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        myCountries.count
+        return myCountries.count
     }
+    
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "mycell")
@@ -36,9 +40,21 @@ extension ViewController: UITableViewDataSource {
             cell = UITableViewCell(style: .default, reuseIdentifier: "mycell")
             cell?.backgroundColor = .gray
             cell?.textLabel?.font = UIFont.systemFont(ofSize: 20)
+            cell?.accessoryType = .disclosureIndicator
         }
         cell!.textLabel?.text = myCountries[indexPath.row]
         return cell!
+    }
+    
+}
+
+// MARK: - UITableViewDelegate
+extension ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+        
+        print(myCountries[indexPath.row])
     }
     
 }
