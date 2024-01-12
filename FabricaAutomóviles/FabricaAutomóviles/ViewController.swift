@@ -7,14 +7,34 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+public class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    var tipoAutomovil: Int?
+    
+    @IBOutlet weak var myLabel: UILabel!
+    
+    
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
-
     }
 
-
+    @IBAction func crearAutomovil(_ sender: Any) {
+        tipoAutomovil = 0
+        performSegue(withIdentifier: "segueSegundaPantalla", sender: self)
+    }
+    
+    @IBAction func crearAutomovilMazda(_ sender: Any) {
+        tipoAutomovil = 1
+        performSegue(withIdentifier: "segueSegundaPantalla", sender: self)
+    }
+    
+    public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let destino = segue.destination as? ViewControllerSegundaPantalla {
+            destino.tipoAutomovil = self.tipoAutomovil
+        }
+    }
+    
 }
 
