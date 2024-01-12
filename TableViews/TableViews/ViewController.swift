@@ -42,7 +42,7 @@ extension ViewController: UITableViewDataSource {
         if indexPath.section == 0 {
             return 50
         }
-        return 150
+        return UITableView.automaticDimension
     }
     
     
@@ -66,6 +66,10 @@ extension ViewController: UITableViewDataSource {
         cell?.myFirstLabel.text = String(indexPath.row + 1)
         cell?.mySecondLabel.text = myCountries[indexPath.row]
         
+        if indexPath.row == 2 {
+            cell!.mySecondLabel.text = "Oh yeah, holiday, todo el dia sin parar. Que idea, gran idea. Vamonos a programar"
+        }
+        
         return cell!
         
     }
@@ -75,7 +79,7 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+
         
         print(myCountries[indexPath.row])
     }
