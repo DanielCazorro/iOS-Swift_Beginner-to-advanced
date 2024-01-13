@@ -9,6 +9,37 @@ import UIKit
 
 final class HomeViewController: UIViewController {
 
+    // MARK: - Outlets
+    
+    // Result
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    // Numbers
+    @IBOutlet weak var number0: UIStackView!
+    @IBOutlet weak var number1: UIStackView!
+    @IBOutlet weak var number2: UIStackView!
+    @IBOutlet weak var number3: UIStackView!
+    @IBOutlet weak var number4: UIStackView!
+    @IBOutlet weak var number5: UIStackView!
+    @IBOutlet weak var number6: UIStackView!
+    @IBOutlet weak var number7: UIStackView!
+    @IBOutlet weak var number8: UIStackView!
+    @IBOutlet weak var number9: UIStackView!
+    @IBOutlet weak var numberDecimal: UIButton!
+    
+    // Operators
+    @IBOutlet weak var operatorAC: UIStackView!
+    @IBOutlet weak var operatorPlusMinus: UIStackView!
+    @IBOutlet weak var operatorPercent: UIStackView!
+    @IBOutlet weak var operatorResult: UIButton!
+    @IBOutlet weak var operatorAdition: UIButton!
+    @IBOutlet weak var operatorSubstraction: UIButton!
+    @IBOutlet weak var operatorMultiplication: UIButton!
+    @IBOutlet weak var operatorDivision: UIButton!
+    
+    
+    
+    
     // MARK:  Inicialización
     
     init() {

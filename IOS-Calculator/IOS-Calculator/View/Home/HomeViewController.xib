@@ -9,6 +9,26 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="IOS_Calculator" customModuleProvider="target">
             <connections>
+                <outlet property="number0" destination="C4K-gu-LYZ" id="dMR-3c-GVW"/>
+                <outlet property="number1" destination="C4K-gu-LYZ" id="E7Z-bF-6nH"/>
+                <outlet property="number2" destination="C4K-gu-LYZ" id="6v9-rW-qC4"/>
+                <outlet property="number3" destination="C4K-gu-LYZ" id="oY0-Es-Fkd"/>
+                <outlet property="number4" destination="C4K-gu-LYZ" id="bpk-OV-0Aj"/>
+                <outlet property="number5" destination="C4K-gu-LYZ" id="2pH-xB-dCT"/>
+                <outlet property="number6" destination="C4K-gu-LYZ" id="afw-39-u6a"/>
+                <outlet property="number7" destination="C4K-gu-LYZ" id="pYP-rH-g3v"/>
+                <outlet property="number8" destination="C4K-gu-LYZ" id="WVp-rd-il3"/>
+                <outlet property="number9" destination="C4K-gu-LYZ" id="pyT-Ar-voX"/>
+                <outlet property="numberDecimal" destination="Ebb-uE-kXn" id="Avg-TZ-MYz"/>
+                <outlet property="operatorAC" destination="C4K-gu-LYZ" id="ZmP-hu-3pW"/>
+                <outlet property="operatorAdition" destination="2ia-dg-fdI" id="ZbT-hL-uSz"/>
+                <outlet property="operatorDivision" destination="B7T-jm-YOv" id="1xb-4K-V4n"/>
+                <outlet property="operatorMultiplication" destination="7Mf-Ue-MKa" id="BAd-Qj-qLZ"/>
+                <outlet property="operatorPercent" destination="C4K-gu-LYZ" id="hWQ-Dj-eDz"/>
+                <outlet property="operatorPlusMinus" destination="C4K-gu-LYZ" id="rhS-HB-GRe"/>
+                <outlet property="operatorResult" destination="wTP-xN-yEc" id="pyO-Id-lng"/>
+                <outlet property="operatorSubstraction" destination="TAD-kF-JkP" id="yS8-lp-GtU"/>
+                <outlet property="resultLabel" destination="G9N-Dz-6vL" id="7hV-Y3-S6l"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
