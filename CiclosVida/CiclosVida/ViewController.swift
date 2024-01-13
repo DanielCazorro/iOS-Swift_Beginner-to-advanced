@@ -39,6 +39,4 @@ class ViewController: UIViewController {
         print("Estoy en VC1 y se activo -> \(#function)")
     }
     
-    
 }
-
