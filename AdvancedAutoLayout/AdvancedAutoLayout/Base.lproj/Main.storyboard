@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-1474" y="-59"/>
         </scene>
-        <!--View Controller-->
+        <!--Auto Layout Avanzado-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdvancedAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Auto Layout Avanzado" id="BYZ-38-t0r" customClass="ViewController" customModule="AdvancedAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +38,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1i3-Hy-hTc">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="683"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Constraints de posición"/>
+                                        <connections>
+                                            <segue destination="GWV-hI-HDZ" kind="show" id="wSL-da-SBf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -52,16 +55,73 @@
                             <constraint firstItem="XTN-41-78v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mPy-Op-CVi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="wkW-DX-kv6"/>
+                    <navigationItem key="navigationItem" title="Auto Layout Avanzado" id="wkW-DX-kv6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-505" y="-59"/>
+            <point key="canvasLocation" x="-718" y="-59"/>
+        </scene>
+        <!--Constraints de posición-->
+        <scene sceneID="FAh-UQ-T0B">
+            <objects>
+                <viewController title="Constraints de posición" id="GWV-hI-HDZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Rt-MF-scH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RtI-5a-iSZ">
+                                <rect key="frame" x="0.0" y="103" width="393" height="315"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U8R-9w-MCY">
+                                        <rect key="frame" x="100" y="100" width="193" height="265"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="U8R-9w-MCY" secondAttribute="bottom" constant="-50" id="AUz-l4-Uej"/>
+                                    <constraint firstItem="U8R-9w-MCY" firstAttribute="top" secondItem="RtI-5a-iSZ" secondAttribute="top" constant="100" id="Qf6-hj-h0t"/>
+                                    <constraint firstItem="U8R-9w-MCY" firstAttribute="leading" secondItem="RtI-5a-iSZ" secondAttribute="leading" constant="100" id="Va4-sQ-Nv8"/>
+                                    <constraint firstAttribute="trailing" secondItem="U8R-9w-MCY" secondAttribute="trailing" constant="100" id="nEJ-HD-aks"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhk-GQ-sWf">
+                                <rect key="frame" x="16" y="434" width="68" height="400"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tPg-Mi-uik"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tPg-Mi-uik" firstAttribute="trailing" secondItem="RtI-5a-iSZ" secondAttribute="trailing" id="6S2-af-ARq"/>
+                            <constraint firstItem="U8R-9w-MCY" firstAttribute="leading" secondItem="Lhk-GQ-sWf" secondAttribute="trailing" constant="16" id="Osy-CR-Rhh"/>
+                            <constraint firstItem="Lhk-GQ-sWf" firstAttribute="leading" secondItem="tPg-Mi-uik" secondAttribute="leading" constant="16" id="RH3-xv-PBF"/>
+                            <constraint firstItem="RtI-5a-iSZ" firstAttribute="top" secondItem="tPg-Mi-uik" secondAttribute="top" id="RWf-HY-OWO"/>
+                            <constraint firstItem="Lhk-GQ-sWf" firstAttribute="bottom" secondItem="tPg-Mi-uik" secondAttribute="bottom" constant="16" id="Tri-G6-xZC"/>
+                            <constraint firstItem="RtI-5a-iSZ" firstAttribute="leading" secondItem="tPg-Mi-uik" secondAttribute="leading" id="XqJ-Lp-6Ej"/>
+                            <constraint firstItem="tPg-Mi-uik" firstAttribute="bottom" secondItem="RtI-5a-iSZ" secondAttribute="bottom" constant="400" id="d57-Dd-jpg"/>
+                            <constraint firstItem="Lhk-GQ-sWf" firstAttribute="top" secondItem="RtI-5a-iSZ" secondAttribute="bottom" constant="16" id="llT-oS-hf3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Constraints de posición" id="i9V-ZX-oFO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Az-5r-Q6r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.58015267175573" y="-59.154929577464792"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
