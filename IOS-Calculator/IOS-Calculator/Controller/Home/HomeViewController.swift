@@ -38,8 +38,6 @@ final class HomeViewController: UIViewController {
     @IBOutlet weak var operatorDivision: UIButton!
     
     
-    
-    
     // MARK:  Inicialización
     
     init() {
@@ -57,4 +55,40 @@ final class HomeViewController: UIViewController {
 
     }
 
+    // MARK: - Button Actions
+    
+    @IBAction func operatorACAction(_ sender: Any) {
+    }
+    
+    @IBAction func operatorPlusMinusAction(_ sender: Any) {
+    }
+    
+    @IBAction func operatorPercentAction(_ sender: Any) {
+    }
+    
+    @IBAction func operatorResultAction(_ sender: Any) {
+    }
+    
+    @IBAction func operatorAdditionAction(_ sender: Any) {
+    }
+    
+    @IBAction func operatorSubstractionAction(_ sender: Any) {
+    }
+    
+    @IBAction func operatorMultiplicationAction(_ sender: Any) {
+    }
+    
+    @IBAction func operatorDivisionAction(_ sender: Any) {
+    }
+    
+    @IBAction func numberDecimalAction(_ sender: Any) {
+    }
+    
+    @IBAction func numberAction(_ sender: UIButton) {
+        print(sender.tag)
+    }
+    
+    
+    
+    
 }
