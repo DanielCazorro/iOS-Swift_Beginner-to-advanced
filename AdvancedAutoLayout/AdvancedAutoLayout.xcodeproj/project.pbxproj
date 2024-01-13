@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C8139482B52E43500FF25A3 /* ModifyConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8139472B52E43500FF25A3 /* ModifyConstraintsViewController.swift */; };
+		2C81394A2B52E56E00FF25A3 /* CreateConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8139492B52E56E00FF25A3 /* CreateConstraintsViewController.swift */; };
 		2CCBDF812B52A5480006139B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBDF802B52A5480006139B /* AppDelegate.swift */; };
 		2CCBDF832B52A5480006139B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBDF822B52A5480006139B /* SceneDelegate.swift */; };
 		2CCBDF852B52A5480006139B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBDF842B52A5480006139B /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		2C8139472B52E43500FF25A3 /* ModifyConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyConstraintsViewController.swift; sourceTree = "<group>"; };
+		2C8139492B52E56E00FF25A3 /* CreateConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateConstraintsViewController.swift; sourceTree = "<group>"; };
 		2CCBDF7D2B52A5480006139B /* AdvancedAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCBDF802B52A5480006139B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CCBDF822B52A5480006139B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				2CCBDF822B52A5480006139B /* SceneDelegate.swift */,
 				2CCBDF842B52A5480006139B /* ViewController.swift */,
 				2C8139472B52E43500FF25A3 /* ModifyConstraintsViewController.swift */,
+				2C8139492B52E56E00FF25A3 /* CreateConstraintsViewController.swift */,
 				2CCBDF862B52A5480006139B /* Main.storyboard */,
 				2CCBDF8B2B52A5490006139B /* LaunchScreen.storyboard */,
 				2CCBDF892B52A5490006139B /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C81394A2B52E56E00FF25A3 /* CreateConstraintsViewController.swift in Sources */,
 				2CCBDF852B52A5480006139B /* ViewController.swift in Sources */,
 				2CCBDF812B52A5480006139B /* AppDelegate.swift in Sources */,
 				2CCBDF832B52A5480006139B /* SceneDelegate.swift in Sources */,
