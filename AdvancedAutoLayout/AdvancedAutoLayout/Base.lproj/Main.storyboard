@@ -36,7 +36,7 @@
                                 <rect key="frame" x="16" y="119" width="361" height="683"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1i3-Hy-hTc">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="170.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="136.66666666666666"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Constraints de posición"/>
                                         <connections>
@@ -44,7 +44,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sw6-3A-rkr">
-                                        <rect key="frame" x="0.0" y="170.66666666666669" width="361" height="171"/>
+                                        <rect key="frame" x="0.0" y="136.66666666666669" width="361" height="136.66666666666669"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Constraints de altura y anchura"/>
                                         <connections>
@@ -52,7 +52,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8v-dk-nrx">
-                                        <rect key="frame" x="0.0" y="341.66666666666669" width="361" height="170.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="273.33333333333331" width="361" height="136.33333333333331"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Modificar constraints por código"/>
                                         <connections>
@@ -60,11 +60,19 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5w-zR-ezV">
-                                        <rect key="frame" x="0.0" y="512.33333333333337" width="361" height="170.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="409.66666666666663" width="361" height="136.66666666666663"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Crear constraints por código"/>
                                         <connections>
                                             <segue destination="DLm-UK-OYn" kind="show" id="Ht6-sV-0Ti"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRi-xe-vt5">
+                                        <rect key="frame" x="0.0" y="546.33333333333337" width="361" height="136.66666666666663"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Constraints de igualdad entre elementos"/>
+                                        <connections>
+                                            <segue destination="vK2-ky-ngl" kind="show" id="zjZ-7w-u2f"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -175,6 +183,54 @@
             </objects>
             <point key="canvasLocation" x="889" y="-756"/>
         </scene>
+        <!--Constraints de igualdad entre elementos-->
+        <scene sceneID="gzZ-E7-5fg">
+            <objects>
+                <viewController title="Constraints de igualdad entre elementos" id="vK2-ky-ngl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f85-Zj-08y">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UhK-4p-DZV">
+                                <rect key="frame" x="16" y="119" width="150" height="150"/>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="tkT-HT-pMg"/>
+                                    <constraint firstAttribute="height" constant="150" id="xzQ-1n-2Oc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZ2-5X-ele">
+                                <rect key="frame" x="32" y="285" width="150" height="50"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uQv-DA-uKC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-nH-IcM">
+                                <rect key="frame" x="227" y="652" width="150" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mKg-68-tqa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UhK-4p-DZV" firstAttribute="leading" secondItem="mKg-68-tqa" secondAttribute="leading" constant="16" id="1Qd-Mb-W5v"/>
+                            <constraint firstItem="mKg-68-tqa" firstAttribute="trailing" secondItem="Taw-nH-IcM" secondAttribute="trailing" constant="16" id="9sE-al-Bwa"/>
+                            <constraint firstItem="tZ2-5X-ele" firstAttribute="top" secondItem="UhK-4p-DZV" secondAttribute="bottom" constant="16" id="ZeC-Ji-2Wx"/>
+                            <constraint firstItem="mKg-68-tqa" firstAttribute="bottom" secondItem="Taw-nH-IcM" secondAttribute="bottom" constant="16" id="ec3-fD-aQu"/>
+                            <constraint firstItem="tZ2-5X-ele" firstAttribute="leading" secondItem="mKg-68-tqa" secondAttribute="leading" constant="32" id="eoZ-45-9Dr"/>
+                            <constraint firstItem="UhK-4p-DZV" firstAttribute="top" secondItem="mKg-68-tqa" secondAttribute="top" constant="16" id="epi-EE-bpP"/>
+                            <constraint firstItem="tZ2-5X-ele" firstAttribute="width" secondItem="UhK-4p-DZV" secondAttribute="width" id="jtm-jx-ZMx"/>
+                            <constraint firstItem="Taw-nH-IcM" firstAttribute="height" secondItem="UhK-4p-DZV" secondAttribute="height" id="m6x-LI-RuQ"/>
+                            <constraint firstItem="Taw-nH-IcM" firstAttribute="width" secondItem="UhK-4p-DZV" secondAttribute="width" id="q42-Eo-U6m"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Constraints de igualdad entre elementos" id="BeC-cl-IvU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Azb-qZ-ZIH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1638.9312977099237" y="-756.33802816901414"/>
+        </scene>
         <!--Constraints de posición-->
         <scene sceneID="FAh-UQ-T0B">
             <objects>
@@ -227,6 +283,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
