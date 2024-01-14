@@ -11,6 +11,7 @@
 		2C36FA192B54599A0064FE89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36FA182B54599A0064FE89 /* ContentView.swift */; };
 		2C36FA1B2B54599B0064FE89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C36FA1A2B54599B0064FE89 /* Assets.xcassets */; };
 		2C36FA1E2B54599B0064FE89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C36FA1D2B54599B0064FE89 /* Preview Assets.xcassets */; };
+		2C7689972B547EAB00D4BCB1 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7689962B547EAB00D4BCB1 /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2C36FA182B54599A0064FE89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C36FA1A2B54599B0064FE89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C36FA1D2B54599B0064FE89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C7689962B547EAB00D4BCB1 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				2C36FA162B54599A0064FE89 /* SwiftUITutorialApp.swift */,
 				2C36FA182B54599A0064FE89 /* ContentView.swift */,
+				2C7689962B547EAB00D4BCB1 /* ImageView.swift */,
 				2C36FA1A2B54599B0064FE89 /* Assets.xcassets */,
 				2C36FA1C2B54599B0064FE89 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C7689972B547EAB00D4BCB1 /* ImageView.swift in Sources */,
 				2C36FA192B54599A0064FE89 /* ContentView.swift in Sources */,
 				2C36FA172B54599A0064FE89 /* SwiftUITutorialApp.swift in Sources */,
 			);

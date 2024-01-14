@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        VStack(alignment: .trailing, spacing: 20) {
+        VStack(alignment: .leading, spacing: 20) {
             Text("Welcome to Jurassic World")
                 .font(.largeTitle)
                 .foregroundStyle(.blue)
