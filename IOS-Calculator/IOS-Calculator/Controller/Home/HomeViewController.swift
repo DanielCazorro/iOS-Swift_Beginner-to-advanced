@@ -118,6 +118,8 @@ final class HomeViewController: UIViewController {
         operatorDivision.round()
         
         numberDecimal.setTitle(kDecimalSeparator, for: .normal)
+        
+        result()
     }
     
     // MARK: - Button Actions
@@ -161,6 +163,57 @@ final class HomeViewController: UIViewController {
     @IBAction func numberAction(_ sender: UIButton) {
         sender.shine()
         print(sender.tag)
+    }
+    
+    // Limpia los valores
+    private func clear() {
+        operation = .none
+        operatorAC.setTitle("AC", for: .normal)
+        if temp != 0 {
+            temp = 0
+            resultLabel.text = "0"
+        } else {
+            total = 0
+            result()
+        }
+    }
+    
+    // Obtiene el resultado final
+    private func result(){
+        
+        switch operation {
+        case .none:
+            // No hacemos nada
+            break
+            
+        case .addiction:
+            total = total + temp
+            break
+            
+        case .substarction:
+            total = total - temp
+            break
+            
+        case .multiplication:
+            total = total * temp
+            break
+            
+        case .division:
+            total = total / temp
+            break
+            
+        case .percent:
+            total = temp / 100
+            total = temp
+            break
+        }
+        
+        // Formateo en pantalla
+        if total <= kMaxValue || total >= kMinValue {
+            resultLabel.text = printFormatter.string(from: NSNumber(value: total))
+            
+        }
+        print("Total: \(total)")
     }
     
 }
