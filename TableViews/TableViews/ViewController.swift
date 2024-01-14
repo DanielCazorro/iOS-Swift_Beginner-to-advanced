@@ -82,6 +82,23 @@ extension ViewController: UITableViewDataSource {
         return "Celdas Custom"
     }
     
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        // Crear acción de eliminar
+        let accionEliminar = UIContextualAction(style: .destructive, title: "Eliminar"){(action,view,completionHandler) in
+            // Cual pais se eliminará?
+            let paisEliminar = self.myCountries![indexPath.row]
+            
+            // Eliminar pais
+            self.context.delete(paisEliminar)
+            
+            // Guardar el cmabio de información
+            try! self.context.save()
+            
+            // Recargar datos
+            self.recuperarDatos()
+        }
+        return UISwipeActionsConfiguration(actions: [accionEliminar])
+    }
     
     func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         if section == 0 {
