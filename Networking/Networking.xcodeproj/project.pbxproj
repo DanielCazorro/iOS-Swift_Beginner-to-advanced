@@ -15,6 +15,7 @@
 		2CB17D0C2B5430E90086ED49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB17D0A2B5430E90086ED49 /* LaunchScreen.storyboard */; };
 		2CB17D152B5431C40086ED49 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2CB17D142B5431C40086ED49 /* Alamofire */; };
 		2CB17D172B5431D40086ED49 /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB17D162B5431D40086ED49 /* NetworkingProvider.swift */; };
+		2CB17D1B2B5432E40086ED49 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB17D1A2B5432E40086ED49 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		2CB17D0B2B5430E90086ED49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CB17D0D2B5430E90086ED49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB17D162B5431D40086ED49 /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
+		2CB17D1A2B5432E40086ED49 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		2CB17CFE2B5430E80086ED49 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				2CB17D182B5432CA0086ED49 /* Network */,
 				2CB17CFF2B5430E80086ED49 /* AppDelegate.swift */,
 				2CB17D012B5430E80086ED49 /* SceneDelegate.swift */,
 				2CB17D032B5430E80086ED49 /* ViewController.swift */,
@@ -67,9 +70,25 @@
 				2CB17D082B5430E90086ED49 /* Assets.xcassets */,
 				2CB17D0A2B5430E90086ED49 /* LaunchScreen.storyboard */,
 				2CB17D0D2B5430E90086ED49 /* Info.plist */,
-				2CB17D162B5431D40086ED49 /* NetworkingProvider.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		2CB17D182B5432CA0086ED49 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2CB17D192B5432D30086ED49 /* Data */,
+				2CB17D162B5431D40086ED49 /* NetworkingProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2CB17D192B5432D30086ED49 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2CB17D1A2B5432E40086ED49 /* User.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +171,7 @@
 				2CB17D042B5430E80086ED49 /* ViewController.swift in Sources */,
 				2CB17D002B5430E80086ED49 /* AppDelegate.swift in Sources */,
 				2CB17D172B5431D40086ED49 /* NetworkingProvider.swift in Sources */,
+				2CB17D1B2B5432E40086ED49 /* User.swift in Sources */,
 				2CB17D022B5430E80086ED49 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

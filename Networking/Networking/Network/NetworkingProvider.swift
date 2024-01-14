@@ -11,4 +11,8 @@ import Alamofire
 final class NetworkingProvider {
     
     static let shared = NetworkingProvider()
+    
+    
+    
+    
 }
