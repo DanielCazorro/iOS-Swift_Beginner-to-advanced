@@ -14,6 +14,7 @@ final class NetworkingProvider {
     
     private let kBaseUrl = "https://gorest.co.in/public-api/"
     private let kStatusOk = 200...299
+    private let kToken = "88c84a9b078ad30f15786cff62b8933febf9afc8eca74f2fbd939f0e55944371"
     
     func getUser(id: Int, success: @escaping (_ user: User) -> (), failures: @escaping (_ error: Error?) -> ()) {
         
@@ -36,10 +37,12 @@ final class NetworkingProvider {
         
         let url = "\(kBaseUrl)users"
         
-        AF.request(url, method: .post, parameters: user, encoder: JSONParameterEncoder.default).validate(statusCode: kStatusOk).responseDecodable (of: UserResponse.self, decoder: DateDecoder()) {
+        let headers: HTTPHeaders = [.authorization(bearerToken: kToken)]
+        
+        AF.request(url, method: .post, parameters: user, encoder: JSONParameterEncoder.default, headers: headers).validate(statusCode: kStatusOk).responseDecodable (of: UserResponse.self, decoder: DateDecoder()) {
             response in
             
-            if let user = response.value?.data {
+            if let user = response.value?.data, user.id != nil {
                 success(user)
                 
             } else {
