@@ -386,6 +386,7 @@
                 <constraint firstItem="C4K-gu-LYZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="bkF-py-ZI3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="C4K-gu-LYZ" secondAttribute="trailing" constant="24" id="c7c-Hb-eRr"/>
                 <constraint firstItem="C4K-gu-LYZ" firstAttribute="top" secondItem="G9N-Dz-6vL" secondAttribute="bottom" constant="48" id="nmi-WV-FCR"/>
+                <constraint firstItem="C4K-gu-LYZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="psQ-YK-LfD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="C4K-gu-LYZ" secondAttribute="bottom" constant="24" id="ugk-Nt-sab"/>
                 <constraint firstItem="G9N-Dz-6vL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="zhb-Sw-pbS"/>
             </constraints>
