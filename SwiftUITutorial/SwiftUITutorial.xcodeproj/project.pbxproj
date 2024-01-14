@@ -17,6 +17,7 @@
 		2C76899F2B54863100D4BCB1 /* Programmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76899E2B54863100D4BCB1 /* Programmer.swift */; };
 		2C7689A12B54865C00D4BCB1 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7689A02B54865C00D4BCB1 /* RowView.swift */; };
 		2C7689A32B54877600D4BCB1 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7689A22B54877600D4BCB1 /* ListView.swift */; };
+		2C7689A52B5488E200D4BCB1 /* ListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7689A42B5488E200D4BCB1 /* ListDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		2C76899E2B54863100D4BCB1 /* Programmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programmer.swift; sourceTree = "<group>"; };
 		2C7689A02B54865C00D4BCB1 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		2C7689A22B54877600D4BCB1 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		2C7689A42B5488E200D4BCB1 /* ListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				2C7689982B54828500D4BCB1 /* MapView.swift */,
 				2C76899A2B5484A100D4BCB1 /* MainView.swift */,
 				2C7689A22B54877600D4BCB1 /* ListView.swift */,
+				2C7689A42B5488E200D4BCB1 /* ListDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				2C7689A12B54865C00D4BCB1 /* RowView.swift in Sources */,
 				2C7689992B54828500D4BCB1 /* MapView.swift in Sources */,
 				2C36FA192B54599A0064FE89 /* ContentView.swift in Sources */,
+				2C7689A52B5488E200D4BCB1 /* ListDetailView.swift in Sources */,
 				2C76899B2B5484A100D4BCB1 /* MainView.swift in Sources */,
 				2C36FA172B54599A0064FE89 /* SwiftUITutorialApp.swift in Sources */,
 			);
