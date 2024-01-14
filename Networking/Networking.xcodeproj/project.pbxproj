@@ -16,6 +16,7 @@
 		2CB17D152B5431C40086ED49 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2CB17D142B5431C40086ED49 /* Alamofire */; };
 		2CB17D172B5431D40086ED49 /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB17D162B5431D40086ED49 /* NetworkingProvider.swift */; };
 		2CB17D1B2B5432E40086ED49 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB17D1A2B5432E40086ED49 /* User.swift */; };
+		2CB17D1E2B5436580086ED49 /* DateDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB17D1D2B5436580086ED49 /* DateDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		2CB17D0D2B5430E90086ED49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB17D162B5431D40086ED49 /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
 		2CB17D1A2B5432E40086ED49 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2CB17D1D2B5436580086ED49 /* DateDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		2CB17D182B5432CA0086ED49 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				2CB17D1C2B5436500086ED49 /* Decoder */,
 				2CB17D192B5432D30086ED49 /* Data */,
 				2CB17D162B5431D40086ED49 /* NetworkingProvider.swift */,
 			);
@@ -89,6 +92,14 @@
 				2CB17D1A2B5432E40086ED49 /* User.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		2CB17D1C2B5436500086ED49 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				2CB17D1D2B5436580086ED49 /* DateDecoder.swift */,
+			);
+			path = Decoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 				2CB17D002B5430E80086ED49 /* AppDelegate.swift in Sources */,
 				2CB17D172B5431D40086ED49 /* NetworkingProvider.swift in Sources */,
 				2CB17D1B2B5432E40086ED49 /* User.swift in Sources */,
+				2CB17D1E2B5436580086ED49 /* DateDecoder.swift in Sources */,
 				2CB17D022B5430E80086ED49 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
