@@ -53,12 +53,30 @@
                                     <action selector="addUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DtQ-Ba-i2t"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tml-yh-Lxl">
+                                <rect key="frame" x="16" y="288" width="361" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Put User"/>
+                                <connections>
+                                    <action selector="updateUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5aa-Rj-mmN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwz-qY-4HH">
+                                <rect key="frame" x="16" y="339" width="361" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete User"/>
+                                <connections>
+                                    <action selector="deleteUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fzv-de-fMb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xwz-qY-4HH" secondAttribute="trailing" constant="16" id="0Ee-O4-9l9"/>
                             <constraint firstItem="gEg-qM-efx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2zz-oS-cHy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Abe-0V-6T8" secondAttribute="trailing" constant="16" id="6f1-wM-Ofa"/>
+                            <constraint firstItem="Xwz-qY-4HH" firstAttribute="top" secondItem="tml-yh-Lxl" secondAttribute="bottom" constant="16" id="A8t-bn-KNe"/>
                             <constraint firstItem="afS-dy-eoZ" firstAttribute="top" secondItem="eET-c4-6bA" secondAttribute="bottom" constant="16" id="I8s-YI-IcE"/>
                             <constraint firstItem="afS-dy-eoZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="M4K-fi-2Bt"/>
                             <constraint firstItem="Abe-0V-6T8" firstAttribute="top" secondItem="klt-Md-TEz" secondAttribute="bottom" constant="16" id="Mbj-ni-0r4"/>
@@ -66,13 +84,17 @@
                             <constraint firstItem="CUa-34-Ukr" firstAttribute="top" secondItem="afS-dy-eoZ" secondAttribute="bottom" constant="16" id="PbT-CX-HVT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="klt-Md-TEz" secondAttribute="trailing" constant="16" id="QGA-PT-rBn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CUa-34-Ukr" secondAttribute="trailing" constant="16" id="THU-m7-kWF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tml-yh-Lxl" secondAttribute="trailing" constant="16" id="TwF-Da-Md7"/>
+                            <constraint firstItem="tml-yh-Lxl" firstAttribute="top" secondItem="CUa-34-Ukr" secondAttribute="bottom" constant="16" id="Uyf-1z-xzw"/>
                             <constraint firstItem="klt-Md-TEz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Vip-mk-4Qv"/>
                             <constraint firstItem="gEg-qM-efx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W2M-ax-DTs"/>
+                            <constraint firstItem="Xwz-qY-4HH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fvG-2u-6Ow"/>
                             <constraint firstItem="eET-c4-6bA" firstAttribute="top" secondItem="Abe-0V-6T8" secondAttribute="bottom" constant="16" id="gQi-Da-NCZ"/>
                             <constraint firstItem="klt-Md-TEz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kul-p5-ra7"/>
                             <constraint firstItem="CUa-34-Ukr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ljO-Vt-ywN"/>
                             <constraint firstItem="Abe-0V-6T8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="odo-86-BQs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="afS-dy-eoZ" secondAttribute="trailing" constant="16" id="oqk-n6-ygF"/>
+                            <constraint firstItem="tml-yh-Lxl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sRq-Yf-mZS"/>
                             <constraint firstItem="eET-c4-6bA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wF6-at-fC7"/>
                         </constraints>
                     </view>

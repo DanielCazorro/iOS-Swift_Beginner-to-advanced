@@ -37,9 +37,7 @@ class ViewController: UIViewController {
             
             self.activityIndicator.stopAnimating()
             
-            self.nameLable.text = user.name
-            self.emailLabel.text = user.email
-            self.idLabel.text = user.id?.description
+            self.setup(user: user)
             
         } failures: { error in
             
@@ -59,9 +57,7 @@ class ViewController: UIViewController {
             
             self.activityIndicator.stopAnimating()
             
-            self.nameLable.text = user.name
-            self.emailLabel.text = user.email
-            self.idLabel.text = user.id?.description
+            self.setup(user: user)
             
         } failures: { error in
             
@@ -71,5 +67,49 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func updateUserAction(_ sender: Any) {
+        
+        let newUser = NewUser(name: "Daniel San", email: nil, gender: nil, status: nil)
+        
+        activityIndicator.startAnimating()
+        
+        NetworkingProvider.shared.updateUser(id: 2138680, user: newUser) { (user) in
+            
+            self.activityIndicator.stopAnimating()
+            
+            self.setup(user: user)
+            
+        } failures: { error in
+            
+            self.activityIndicator.stopAnimating()
+
+            self.nameLable.text = error.debugDescription
+        }
+    }
+    
+    @IBAction func deleteUserAction(_ sender: Any) {
+        activityIndicator.startAnimating()
+        
+        let id = 1828
+        
+        NetworkingProvider.shared.deleteUser(id: id) {
+            self.activityIndicator.stopAnimating()
+            
+            self.nameLable.text = "Se ha borrado el usuario con ID\(id)"
+        } failures: { error in
+            self.activityIndicator.stopAnimating()
+            
+            self.nameLable.text = error.debugDescription
+        }
+
+        
+    }
+    
+    private func setup(user: User) {
+        
+        nameLable.text = user.name
+        emailLabel.text = user.email
+        idLabel.text = user.id?.description
+    }
 }
 
