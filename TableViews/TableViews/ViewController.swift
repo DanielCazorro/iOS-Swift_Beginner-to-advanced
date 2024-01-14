@@ -100,6 +100,7 @@ extension ViewController: UITableViewDataSource {
         return UISwipeActionsConfiguration(actions: [accionEliminar])
     }
     
+    
     func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         if section == 0 {
             return "footer para celdas simples"
@@ -157,6 +158,36 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        // Que pais vamos a editar
+        let paisEditar = self.myCountries![indexPath.row]
+        
+        //Crear alerta
+        let alert = UIAlertController(title: "Editar Pais", message: "Edita el pais", preferredStyle: .alert)
+        alert.addTextField()
+        
+        //Recuperar nombre de pais actual de la tabla y agregarla al textField de la alerta
+        let textField = alert.textFields![0]
+        
+        textField.text = paisEditar.nombre
+        
+        // Crear y configurar boton de alerta
+        let botonAlerta = UIAlertAction(title: "Editar", style: .default){ (action) in
+            
+            //Recuperar textField de la alerta
+            let textField = alert.textFields![0]
+            
+            //Editar pais actual con lo que esté en el textfield
+            paisEditar.nombre = textField.text
+            
+            // Guardar información (Añade block do-try-cath)
+            try! self.context.save()
+            
+            // Refrescar inforamción en tableview
+            self.recuperarDatos()
+        }
+        // Añadir boton a la alerta y mostrar la alerta
+        alert.addAction(botonAlerta)
+        self.present(alert, animated: true, completion: nil)
         
         print(myCountries![indexPath.row])
     }
