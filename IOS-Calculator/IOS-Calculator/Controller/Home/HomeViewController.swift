@@ -125,38 +125,67 @@ final class HomeViewController: UIViewController {
     // MARK: - Button Actions
     
     @IBAction func operatorACAction(_ sender: UIButton) {
+        clear()
         sender.shine()
     }
     
     @IBAction func operatorPlusMinusAction(_ sender: UIButton) {
+        temp = temp * (-1)
+        resultLabel.text = printFormatter.string(from: NSNumber(value: temp))
         sender.shine()
     }
     
     @IBAction func operatorPercentAction(_ sender: UIButton) {
+        if operation != .percent {
+            result()
+        }
+        operating = true
+        operation = .percent
+        result()
         sender.shine()
     }
     
     @IBAction func operatorResultAction(_ sender: UIButton) {
+        result()
         sender.shine()
     }
     
     @IBAction func operatorAdditionAction(_ sender: UIButton) {
+        result()
+        operating = true
+        operation = .addiction
         sender.shine()
     }
     
     @IBAction func operatorSubstractionAction(_ sender: UIButton) {
+        result()
+        operating = true
+        operation = .substarction
         sender.shine()
     }
     
     @IBAction func operatorMultiplicationAction(_ sender: UIButton) {
+        result()
+        operating = true
+        operation = .multiplication
         sender.shine()
     }
     
     @IBAction func operatorDivisionAction(_ sender: UIButton) {
+        result()
+        operating = true
+        operation = .division
         sender.shine()
     }
     
     @IBAction func numberDecimalAction(_ sender: UIButton) {
+        let currentTemp = auxFormatter.string(from: NSNumber(value: temp))!
+        if !operating && currentTemp.count >= kMaxLenght {
+            return
+        }
+        
+        resultLabel.text = resultLabel.text! + kDecimalSeparator
+        decimal = true
         sender.shine()
     }
     
