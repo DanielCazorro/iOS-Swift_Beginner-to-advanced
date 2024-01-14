@@ -49,6 +49,7 @@ final class HomeViewController: UIViewController {
     
     private let kDecimalSeparator = Locale.current.decimalSeparator!
     private let kMaxLenght = 9
+    private let kTotal = "total"
     
     private enum OperationType {
         case none, addiction, substarction, multiplication, division, percent
@@ -140,6 +141,8 @@ final class HomeViewController: UIViewController {
         operatorDivision.round()
         
         numberDecimal.setTitle(kDecimalSeparator, for: .normal)
+        
+        total = UserDefaults.standard.double(forKey: kTotal)
         
         result()
     }
@@ -322,6 +325,8 @@ final class HomeViewController: UIViewController {
         operation = .none
         
         selectVisualOperation()
+        
+        UserDefaults.standard.set(total, forKey: kTotal)
         
         print("Total: \(total)")
     }
