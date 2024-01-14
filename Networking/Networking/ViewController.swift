@@ -6,12 +6,15 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var nameLable: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var idLabel: UILabel!
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var downloadImageButton: UIButton!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
@@ -102,6 +105,14 @@ class ViewController: UIViewController {
             self.nameLable.text = error.debugDescription
         }
 
+        
+    }
+    @IBAction func donwloadImageAction(_ sender: Any) {
+        
+        downloadImageButton.isHidden = true
+        
+        logoImageView.kf.setImage(with: URL(string: "https://ih1.redbubble.net/image.1071266540.8760/flat,750x1000,075,f.u1.jpg"))
+        
         
     }
     
