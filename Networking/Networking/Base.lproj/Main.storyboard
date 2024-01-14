@@ -24,15 +24,43 @@
                                     <action selector="getUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="agd-PH-qgq"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="gEg-qM-efx">
+                                <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eET-c4-6bA">
+                                <rect key="frame" x="16" y="163" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abe-0V-6T8">
+                                <rect key="frame" x="16" y="126" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="gEg-qM-efx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2zz-oS-cHy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Abe-0V-6T8" secondAttribute="trailing" constant="16" id="6f1-wM-Ofa"/>
+                            <constraint firstItem="Abe-0V-6T8" firstAttribute="top" secondItem="klt-Md-TEz" secondAttribute="bottom" constant="16" id="Mbj-ni-0r4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eET-c4-6bA" secondAttribute="trailing" constant="16" id="OeZ-Aw-aGo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="klt-Md-TEz" secondAttribute="trailing" constant="16" id="QGA-PT-rBn"/>
                             <constraint firstItem="klt-Md-TEz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Vip-mk-4Qv"/>
+                            <constraint firstItem="gEg-qM-efx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W2M-ax-DTs"/>
+                            <constraint firstItem="eET-c4-6bA" firstAttribute="top" secondItem="Abe-0V-6T8" secondAttribute="bottom" constant="16" id="gQi-Da-NCZ"/>
                             <constraint firstItem="klt-Md-TEz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kul-p5-ra7"/>
+                            <constraint firstItem="Abe-0V-6T8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="odo-86-BQs"/>
+                            <constraint firstItem="eET-c4-6bA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wF6-at-fC7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="gEg-qM-efx" id="JQd-rL-MMD"/>
+                        <outlet property="emailLabel" destination="eET-c4-6bA" id="Y3t-a7-ofy"/>
+                        <outlet property="nameLable" destination="Abe-0V-6T8" id="Ejl-pa-EUb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

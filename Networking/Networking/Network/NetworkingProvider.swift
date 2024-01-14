@@ -15,7 +15,7 @@ final class NetworkingProvider {
     private let kBaseUrl = "https://gorest.co.in/public-api/"
     private let kStatusOk = 200...299
     
-    func getUser(id: Int) {
+    func getUser(id: Int, success: @escaping (_ user: User) -> (), failures: @escaping (_ error: Error?) -> ()) {
         
         let url = "\(kBaseUrl)users/\(id)"
         
@@ -23,10 +23,10 @@ final class NetworkingProvider {
             response in
             
             if let user = response.value?.data {
-                print(user)
-                print(user.createdAt)
+                success(user)
+                
             } else {
-                print(response.error?.responseCode ?? "No error")
+                failures(response.error)
             }
         }
         

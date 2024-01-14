@@ -9,14 +9,41 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameLable: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        nameLable.text = ""
+        nameLable.numberOfLines = 0
+        emailLabel.text = ""
+        emailLabel.numberOfLines = 0
+        
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.stopAnimating()
     }
 
     @IBAction func getUserAction(_ sender: Any) {
-        NetworkingProvider.shared.getUser(id: 5914160)
+        
+        activityIndicator.startAnimating()
+        
+        NetworkingProvider.shared.getUser(id: 2138680) { (user) in
+            
+            self.activityIndicator.stopAnimating()
+            
+            self.nameLable.text = user.name
+            self.emailLabel.text = user.email
+            
+        } failures: { error in
+            
+            self.activityIndicator.stopAnimating()
+
+            self.nameLable.text = error.debugDescription
+        }
     }
     
 }
