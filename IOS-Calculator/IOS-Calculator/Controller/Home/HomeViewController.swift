@@ -8,7 +8,7 @@
 import UIKit
 
 final class HomeViewController: UIViewController {
-
+    
     // MARK: - Outlets
     
     // Result
@@ -82,16 +82,16 @@ final class HomeViewController: UIViewController {
     
     // Formateo de valores por pantalla por defecto
     private let printFormatter: NumberFormatter = {
-            let formatter = NumberFormatter()
-            let locale = Locale.current
-            formatter.groupingSeparator = locale.groupingSeparator
-            formatter.decimalSeparator = locale.decimalSeparator
-            formatter.numberStyle = .decimal
-            formatter.maximumIntegerDigits = 9
-            formatter.minimumFractionDigits = 0
-            formatter.maximumFractionDigits = 8
-            return formatter
-        }()
+        let formatter = NumberFormatter()
+        let locale = Locale.current
+        formatter.groupingSeparator = locale.groupingSeparator
+        formatter.decimalSeparator = locale.decimalSeparator
+        formatter.numberStyle = .decimal
+        formatter.maximumIntegerDigits = 9
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 8
+        return formatter
+    }()
     
     // Formateo de valores por pantalla en formato científico
     private let printScientificFormatter: NumberFormatter = {
@@ -117,7 +117,7 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         numberDecimal.setTitle(kDecimalSeparator, for: .normal)
         
         total = UserDefaults.standard.double(forKey: kTotal)
@@ -139,7 +139,7 @@ final class HomeViewController: UIViewController {
         number8.round()
         number9.round()
         numberDecimal.round()
-
+        
         operatorAC.round()
         operatorPlusMinus.round()
         operatorPercent.round()
@@ -199,7 +199,7 @@ final class HomeViewController: UIViewController {
         operating = true
         operation = .substarction
         sender.selectOperation(true)
-
+        
         sender.shine()
     }
     
@@ -211,7 +211,7 @@ final class HomeViewController: UIViewController {
         operating = true
         operation = .multiplication
         sender.selectOperation(true)
-
+        
         sender.shine()
     }
     
@@ -223,7 +223,7 @@ final class HomeViewController: UIViewController {
         operating = true
         operation = .division
         sender.selectOperation(true)
-
+        
         sender.shine()
     }
     
@@ -245,6 +245,7 @@ final class HomeViewController: UIViewController {
         
         
         operatorAC.setTitle("C", for: .normal)
+        
         var currentTemp = auxTotalFormatter.string(from: NSNumber(value: temp))!
         if !operating && currentTemp.count >= kMaxLenght {
             return
@@ -277,6 +278,9 @@ final class HomeViewController: UIViewController {
     
     // Limpia los valores
     private func clear() {
+        if operation == .none {
+            total = 0
+        }
         operation = .none
         operatorAC.setTitle("AC", for: .normal)
         if temp != 0 {
@@ -379,7 +383,7 @@ final class HomeViewController: UIViewController {
                 operatorMultiplication.selectOperation(false)
                 operatorDivision.selectOperation(true)
                 break
-
+                
             }
         }
         
