@@ -14,14 +14,16 @@ struct ImageView: View {
                 .resizable()
                 .padding(50)
                 .scaledToFill()
-                .background(Color.gray)
+                .background(Color.green)
                 .clipShape(Circle())
-                .overlay(Circle().stroke(Color.blue, lineWidth:4))
+                .overlay(Circle().stroke(Color.green, lineWidth:4))
                 .shadow(color: Color.gray,radius: 5)
             
             Image(systemName: "person.fill.badge.minus")
                 .resizable()
                 .padding(50)
+                .scaledToFit()
+                .background(Color.blue)
         }
     }
 }
