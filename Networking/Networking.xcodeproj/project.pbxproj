@@ -62,7 +62,6 @@
 		2CB17CFE2B5430E80086ED49 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				2CB17D182B5432CA0086ED49 /* Network */,
 				2CB17CFF2B5430E80086ED49 /* AppDelegate.swift */,
 				2CB17D012B5430E80086ED49 /* SceneDelegate.swift */,
 				2CB17D032B5430E80086ED49 /* ViewController.swift */,
@@ -70,6 +69,7 @@
 				2CB17D082B5430E90086ED49 /* Assets.xcassets */,
 				2CB17D0A2B5430E90086ED49 /* LaunchScreen.storyboard */,
 				2CB17D0D2B5430E90086ED49 /* Info.plist */,
+				2CB17D182B5432CA0086ED49 /* Network */,
 			);
 			path = Networking;
 			sourceTree = "<group>";

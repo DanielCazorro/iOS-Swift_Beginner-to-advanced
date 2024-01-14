@@ -15,6 +15,9 @@ class ViewController: UIViewController {
 
     }
 
-
+    @IBAction func getUserAction(_ sender: Any) {
+        NetworkingProvider.shared.getUser(id: 5914160)
+    }
+    
 }
 

@@ -22,7 +22,7 @@ import Foundation
  }
  */
 
-struct UserResponse {
+struct UserResponse: Decodable {
     
     let code: Int?
     let meta: Meta?
@@ -30,18 +30,18 @@ struct UserResponse {
     
 }
 
-struct User {
+struct User: Decodable {
     
     let ide: Int?
     let name: String?
     let email: String?
     let gender: String?
     let status: String?
-    let created_ad: Date?
-    let updated_at: Date?
+    //let created_ad: Date?
+    //let updated_at: Date?
     
 }
 
-struct Meta {
+struct Meta: Decodable {
     
 }
