@@ -32,4 +32,21 @@ final class NetworkingProvider {
         
     }
     
+    func addUser(user: NewUser, success: @escaping (_ user: User) -> (), failures: @escaping (_ error: Error?) -> ()) {
+        
+        let url = "\(kBaseUrl)users"
+        
+        AF.request(url, method: .post, parameters: user, encoder: JSONParameterEncoder.default).validate(statusCode: kStatusOk).responseDecodable (of: UserResponse.self, decoder: DateDecoder()) {
+            response in
+            
+            if let user = response.value?.data {
+                success(user)
+                
+            } else {
+                failures(response.error)
+            }
+        }
+        
+    }
+    
 }

@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var nameLable: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var idLabel: UILabel!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
         nameLable.numberOfLines = 0
         emailLabel.text = ""
         emailLabel.numberOfLines = 0
+        idLabel.text = ""
         
         activityIndicator.hidesWhenStopped = true
         activityIndicator.stopAnimating()
@@ -37,6 +39,7 @@ class ViewController: UIViewController {
             
             self.nameLable.text = user.name
             self.emailLabel.text = user.email
+            self.idLabel.text = user.id?.description
             
         } failures: { error in
             
@@ -44,6 +47,9 @@ class ViewController: UIViewController {
 
             self.nameLable.text = error.debugDescription
         }
+    }
+    
+    @IBAction func addUserAction(_ sender: Any) {
     }
     
 }
