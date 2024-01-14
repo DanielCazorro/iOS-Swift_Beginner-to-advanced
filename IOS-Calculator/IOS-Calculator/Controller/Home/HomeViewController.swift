@@ -173,30 +173,51 @@ final class HomeViewController: UIViewController {
     }
     
     @IBAction func operatorAdditionAction(_ sender: UIButton) {
-        result()
+        
+        if operation != .none {
+            result()
+        }
+        
         operating = true
         operation = .addiction
+        sender.selectOperation(true)
+        
         sender.shine()
     }
     
     @IBAction func operatorSubstractionAction(_ sender: UIButton) {
-        result()
+        if operation != .none {
+            result()
+        }
+        
         operating = true
         operation = .substarction
+        sender.selectOperation(true)
+
         sender.shine()
     }
     
     @IBAction func operatorMultiplicationAction(_ sender: UIButton) {
-        result()
+        if operation != .none {
+            result()
+        }
+        
         operating = true
         operation = .multiplication
+        sender.selectOperation(true)
+
         sender.shine()
     }
     
     @IBAction func operatorDivisionAction(_ sender: UIButton) {
-        result()
+        if operation != .none {
+            result()
+        }
+        
         operating = true
         operation = .division
+        sender.selectOperation(true)
+
         sender.shine()
     }
     
@@ -208,6 +229,9 @@ final class HomeViewController: UIViewController {
         
         resultLabel.text = resultLabel.text! + kDecimalSeparator
         decimal = true
+        
+        selectVisualOperation()
+        
         sender.shine()
     }
     
@@ -239,6 +263,8 @@ final class HomeViewController: UIViewController {
         let number = sender.tag
         temp = Double(currentTemp + String(number))!
         resultLabel.text = printFormatter.string(from: NSNumber(value: temp))
+        
+        selectVisualOperation()
         
         sender.shine()
     }
@@ -295,7 +321,60 @@ final class HomeViewController: UIViewController {
         
         operation = .none
         
+        selectVisualOperation()
+        
         print("Total: \(total)")
+    }
+    
+    // Muestra de forma visual la operación seleccionada
+    private func selectVisualOperation() {
+        
+        if !operating {
+            //No estmamos operando
+            operatorAdition.selectOperation(false)
+            operatorSubstraction.selectOperation(false)
+            operatorMultiplication.selectOperation(false)
+            operatorDivision.selectOperation(false)
+        } else {
+            switch operation {
+            case .none, .percent:
+                operatorAdition.selectOperation(false)
+                operatorSubstraction.selectOperation(false)
+                operatorMultiplication.selectOperation(false)
+                operatorDivision.selectOperation(false)
+                break
+                
+            case .addiction:
+                operatorAdition.selectOperation(true)
+                operatorSubstraction.selectOperation(false)
+                operatorMultiplication.selectOperation(false)
+                operatorDivision.selectOperation(false)
+                break
+                
+            case .substarction:
+                operatorAdition.selectOperation(false)
+                operatorSubstraction.selectOperation(true)
+                operatorMultiplication.selectOperation(false)
+                operatorDivision.selectOperation(false)
+                break
+                
+            case .multiplication:
+                operatorAdition.selectOperation(false)
+                operatorSubstraction.selectOperation(false)
+                operatorMultiplication.selectOperation(true)
+                operatorDivision.selectOperation(false)
+                break
+                
+            case .division:
+                operatorAdition.selectOperation(false)
+                operatorSubstraction.selectOperation(false)
+                operatorMultiplication.selectOperation(false)
+                operatorDivision.selectOperation(true)
+                break
+
+            }
+        }
+        
     }
     
 }
