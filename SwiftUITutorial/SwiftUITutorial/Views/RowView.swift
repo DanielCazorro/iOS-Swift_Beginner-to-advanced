@@ -26,10 +26,15 @@ struct RowView: View {
                 
             }
             Spacer()
+            
+            if programmer.favorite {
+                Image(systemName: "star.fill")
+                    .foregroundStyle(.yellow)
+            }
         }
     }
 }
 
 #Preview {
-    RowView(programmer: Programmer(id: 0, name: "Daniel", languages: "Swift", avatar: Image(systemName: "person.fill")))
+    RowView(programmer: Programmer(id: 0, name: "Daniel", languages: "Swift", avatar: Image(systemName: "person.fill"), favorite: false))
 }

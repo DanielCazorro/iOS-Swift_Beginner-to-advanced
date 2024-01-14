@@ -29,5 +29,5 @@ struct ListDetailView: View {
 }
 
 #Preview {
-    ListDetailView(programmer: Programmer(id: 0, name: "Daniel", languages: "Swift", avatar: Image(systemName: "person.fill")))
+    ListDetailView(programmer: Programmer(id: 0, name: "Daniel", languages: "Swift", avatar: Image(systemName: "person.fill"), favorite: true))
 }
