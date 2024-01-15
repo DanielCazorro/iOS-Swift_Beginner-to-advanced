@@ -2,8 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Reversed</key>
-	<string></string>
+	<key>CLIENT_ID</key>
+	<string>476117234073-e6gid29ouor2sm47ajfv4nn41a5gt9ru.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.476117234073-e6gid29ouor2sm47ajfv4nn41a5gt9ru</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBZHoEFWBfglQhDj3ZCUnwi-r1e1aRnkAU</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,18 +19,16 @@
 	<key>STORAGE_BUCKET</key>
 	<string>fir-tutorial-b1a50.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:476117234073:ios:6f97658595068055ca2308</string>
-	<key>CFBundleIdentifier</key>
-	<string></string>
 </dict>
 </plist>
