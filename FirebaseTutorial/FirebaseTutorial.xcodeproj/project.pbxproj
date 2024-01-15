@@ -41,6 +41,8 @@
 		2C2938BA2B551E7100344813 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2C2938B92B551E7100344813 /* FirebaseRemoteConfigSwift */; };
 		2C2938BC2B551E7100344813 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2C2938BB2B551E7100344813 /* FirebaseStorage */; };
 		2C2938BE2B551E7100344813 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2C2938BD2B551E7100344813 /* FirebaseStorageCombine-Community */; };
+		2C95069E2B55BF78004A9731 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95069D2B55BF78004A9731 /* HomeViewController.swift */; };
+		2C9506A02B55C2C0004A9731 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C95069F2B55C2C0004A9731 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		2C29387E2B551B1100344813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C2938802B551B1100344813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C2938862B551DA200344813 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2C95069D2B55BF78004A9731 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2C95069F2B55C2C0004A9731 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +119,9 @@
 				2C2938722B551B1000344813 /* AppDelegate.swift */,
 				2C2938742B551B1000344813 /* SceneDelegate.swift */,
 				2C2938762B551B1000344813 /* AuthViewController.swift */,
+				2C95069D2B55BF78004A9731 /* HomeViewController.swift */,
 				2C2938782B551B1000344813 /* Main.storyboard */,
+				2C95069F2B55C2C0004A9731 /* HomeViewController.xib */,
 				2C29387B2B551B1100344813 /* Assets.xcassets */,
 				2C29387D2B551B1100344813 /* LaunchScreen.storyboard */,
 				2C2938802B551B1100344813 /* Info.plist */,
@@ -216,6 +222,7 @@
 			files = (
 				2C29387F2B551B1100344813 /* LaunchScreen.storyboard in Resources */,
 				2C2938872B551DA200344813 /* GoogleService-Info.plist in Resources */,
+				2C9506A02B55C2C0004A9731 /* HomeViewController.xib in Resources */,
 				2C29387C2B551B1100344813 /* Assets.xcassets in Resources */,
 				2C29387A2B551B1000344813 /* Main.storyboard in Resources */,
 			);
@@ -231,6 +238,7 @@
 				2C2938772B551B1000344813 /* AuthViewController.swift in Sources */,
 				2C2938732B551B1000344813 /* AppDelegate.swift in Sources */,
 				2C2938752B551B1000344813 /* SceneDelegate.swift in Sources */,
+				2C95069E2B55BF78004A9731 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
