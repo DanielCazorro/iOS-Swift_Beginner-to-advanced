@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AuthViewController.swift
 //  FirebaseTutorial
 //
 //  Created by Daniel Cazorro Frias  on 15/1/24.
@@ -8,7 +8,7 @@
 import UIKit
 import FirebaseAnalytics
 
-class ViewController: UIViewController {
+class AuthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +17,4 @@ class ViewController: UIViewController {
         Analytics.logEvent("InitScreen", parameters: ["message":"Integración de Firebase Completa"])
     }
 
-
 }
-
