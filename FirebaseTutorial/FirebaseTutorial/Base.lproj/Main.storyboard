@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RMa-H7-MmG">
-                                <rect key="frame" x="16" y="119" width="361" height="136"/>
+                                <rect key="frame" x="16" y="119" width="361" height="184"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jdO-q1-6ME">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="40"/>
@@ -49,7 +50,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhV-Ja-f81">
                                                 <rect key="frame" x="0.0" y="0.0" width="180.66666666666666" height="40"/>
-                                                <color key="backgroundColor" red="0.054901960780000002" green="0.36862745099999999" blue="0.68627450980000004" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Registrar"/>
                                                 <connections>
@@ -71,6 +72,16 @@
                                             <constraint firstAttribute="height" constant="40" id="6Q7-Gg-mcf"/>
                                         </constraints>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxH-h9-mHE">
+                                        <rect key="frame" x="0.0" y="144" width="361" height="40"/>
+                                        <color key="backgroundColor" red="0.054901960780000002" green="0.36862745099999999" blue="0.68627450980000004" alpha="0.35800393209999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" systemColor="tintColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Google"/>
+                                        <connections>
+                                            <action selector="googleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ruJ-KQ-0EA"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -86,7 +97,9 @@
                         <nil key="title"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="authStackView" destination="RMa-H7-MmG" id="nd8-4j-bx4"/>
                         <outlet property="emailTextField" destination="jdO-q1-6ME" id="d8R-oV-Rgo"/>
+                        <outlet property="googleButton" destination="FxH-h9-mHE" id="Gri-ku-5eE"/>
                         <outlet property="logInButton" destination="bqx-Cb-wmi" id="dsU-SQ-k2C"/>
                         <outlet property="passwordTextField" destination="yEg-Jb-kfZ" id="phy-W9-tK6"/>
                         <outlet property="signUpButton" destination="DhV-Ja-f81" id="EdM-ik-os0"/>
@@ -97,4 +110,12 @@
             <point key="canvasLocation" x="-450" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
