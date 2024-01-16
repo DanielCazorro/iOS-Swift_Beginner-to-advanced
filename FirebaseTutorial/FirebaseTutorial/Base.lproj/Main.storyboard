@@ -33,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RMa-H7-MmG">
-                                <rect key="frame" x="16" y="119" width="361" height="232"/>
+                                <rect key="frame" x="16" y="119" width="361" height="280"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jdO-q1-6ME">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="40"/>
@@ -92,6 +92,16 @@
                                             <action selector="facebookButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KTR-YP-PBN"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lP3-hB-SXe">
+                                        <rect key="frame" x="0.0" y="240" width="361" height="40"/>
+                                        <color key="backgroundColor" red="0.054901960780000002" green="0.36862745099999999" blue="0.68627450980000004" alpha="0.35800393209999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" systemColor="tintColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Apple"/>
+                                        <connections>
+                                            <action selector="appleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tZ2-4b-kyD"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -107,6 +117,7 @@
                         <nil key="title"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="appleButton" destination="lP3-hB-SXe" id="waj-Bt-Xmh"/>
                         <outlet property="authStackView" destination="RMa-H7-MmG" id="nd8-4j-bx4"/>
                         <outlet property="emailTextField" destination="jdO-q1-6ME" id="d8R-oV-Rgo"/>
                         <outlet property="facebookButton" destination="74t-Mb-ePs" id="MgX-sU-K0l"/>

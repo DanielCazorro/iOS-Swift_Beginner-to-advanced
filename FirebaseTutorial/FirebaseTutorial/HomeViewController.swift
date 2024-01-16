@@ -12,6 +12,7 @@ enum ProviderType: String {
     case basic
     case google
     case facebook
+    case apple
 }
 
 class HomeViewController: UIViewController {
@@ -62,7 +63,7 @@ class HomeViewController: UIViewController {
         
         switch provider {
             
-        case .basic, .google, .facebook:
+        case .basic, .google, .facebook, .apple:
             do {
                 try Auth.auth().signOut()
                 navigationController?.popViewController(animated: true)
