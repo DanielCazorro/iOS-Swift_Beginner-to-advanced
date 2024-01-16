@@ -11,6 +11,7 @@ import FirebaseAuth
 enum ProviderType: String {
     case basic
     case google
+    case facebook
 }
 
 class HomeViewController: UIViewController {
@@ -60,7 +61,8 @@ class HomeViewController: UIViewController {
         defaults.synchronize()
         
         switch provider {
-        case .basic, .google:
+            
+        case .basic, .google, .facebook:
             do {
                 try Auth.auth().signOut()
                 navigationController?.popViewController(animated: true)

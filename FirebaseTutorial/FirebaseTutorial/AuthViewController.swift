@@ -19,6 +19,7 @@ class AuthViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var googleButton: UIButton!
+    @IBOutlet weak var facebookButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,6 +92,9 @@ class AuthViewController: UIViewController {
     }
     
     @IBAction func googleButtonAction(_ sender: Any) {
+    }
+    
+    @IBAction func facebookButtonAction(_ sender: Any) {
     }
 }
 
