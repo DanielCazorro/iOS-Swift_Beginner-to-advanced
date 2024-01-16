@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseAnalytics
 import FirebaseAuth
+import GoogleSignIn
 
 class AuthViewController: UIViewController {
     
@@ -36,6 +37,17 @@ class AuthViewController: UIViewController {
             
             navigationController?.pushViewController(HomeViewController(email: email, provider: ProviderType.init(rawValue: provider)!), animated: false)
         }
+        
+        // Google auth
+        
+    }
+    
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        authStackView.isHidden = false
     }
     
     // IBAction
@@ -44,7 +56,7 @@ class AuthViewController: UIViewController {
         if let email = emailTextField.text, let password = passwordTextField.text {
             
             Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-            
+                
                 if let result = result, error == nil {
                     
                     self.navigationController?.pushViewController(HomeViewController(email: result.user.email!, provider: .basic), animated: true)
@@ -63,7 +75,7 @@ class AuthViewController: UIViewController {
         if let email = emailTextField.text, let password = passwordTextField.text {
             
             Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
-            
+                
                 if let result = result, error == nil {
                     
                     self.navigationController?.pushViewController(HomeViewController(email: result.user.email!, provider: .basic), animated: true)
@@ -81,3 +93,4 @@ class AuthViewController: UIViewController {
     @IBAction func googleButtonAction(_ sender: Any) {
     }
 }
+
