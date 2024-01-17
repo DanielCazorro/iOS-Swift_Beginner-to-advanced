@@ -47,7 +47,7 @@ final class HomeViewController: UIViewController {
     
     // MARK: - Constantes
     
-    private let kDecimalSeparator = Locale.current.decimalSeparator!
+    private let kDecimalSeparator = "."
     private let kMaxLenght = 9
     private let kTotal = "total"
     
@@ -60,7 +60,7 @@ final class HomeViewController: UIViewController {
         let formatter = NumberFormatter()
         let locale = Locale.current
         formatter.groupingSeparator = ""
-        formatter.decimalSeparator = locale.decimalSeparator
+        formatter.decimalSeparator = "."
         formatter.numberStyle = .decimal
         formatter.maximumIntegerDigits = 100
         formatter.minimumFractionDigits = 0
@@ -85,7 +85,7 @@ final class HomeViewController: UIViewController {
         let formatter = NumberFormatter()
         let locale = Locale.current
         formatter.groupingSeparator = locale.groupingSeparator
-        formatter.decimalSeparator = locale.decimalSeparator
+        formatter.decimalSeparator = "."
         formatter.numberStyle = .decimal
         formatter.maximumIntegerDigits = 9
         formatter.minimumFractionDigits = 0
@@ -229,7 +229,7 @@ final class HomeViewController: UIViewController {
     
     @IBAction func numberDecimalAction(_ sender: UIButton) {
         let currentTemp = auxTotalFormatter.string(from: NSNumber(value: temp))!
-        if !operating && currentTemp.count >= kMaxLenght {
+        if resultLabel.text?.contains(kDecimalSeparator) ?? false || (!operating && currentTemp.count >= kMaxLenght) {
             return
         }
         

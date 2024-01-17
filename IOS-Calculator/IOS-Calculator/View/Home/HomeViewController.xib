@@ -343,7 +343,7 @@
                                             </constraints>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" title=",">
+                                            <buttonConfiguration key="configuration" style="plain" title=".">
                                                 <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="35"/>
                                             </buttonConfiguration>
                                             <connections>
